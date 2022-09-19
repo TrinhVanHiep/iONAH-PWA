@@ -3,7 +3,7 @@ module.exports = (targets) => {
       routes.push({
         name: "MyGreetingRoute",
         pattern: "/greeting",
-        path: require.resolve("../components/GreetingPage/greetingPage.js"),
+        path: require.resolve("../components/HomePage/HomePage.js"),
       });
       return routes;
     });
