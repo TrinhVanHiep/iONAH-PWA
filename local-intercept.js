@@ -27,7 +27,7 @@ function localIntercept(targets) {
             name: 'Home Page',
             pattern: '/',
             exact: true,
-            path: require.resolve('./src/components/HomePage/homePage.js')
+            path: require.resolve('./src/components/HomePage/HomePage.js')
         });
     });
 }
