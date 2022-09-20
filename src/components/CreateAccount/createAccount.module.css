@@ -1,0 +1,142 @@
+.root {
+    composes: gap-xs from global;
+    composes: justify-items-stretch from global;
+    composes: px-sm from global;
+    composes: py-xs from global;
+}
+
+.message {
+    composes: bg-subtle from global;
+    composes: leading-tight from global;
+    composes: p-xs from global;
+    composes: rounded from global;
+    composes: text-sm from global;
+}
+
+/* TODO @TW: cannot compose */
+.message:empty {
+    display: none;
+}
+
+.actions {
+    composes: gap-xs from global;
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: justify-center from global;
+    composes: mt-xs from global;
+    composes: text-center from global;
+
+    composes: lg_grid-flow-col from global;
+}
+
+.cancelButton {
+    composes: root_lowPriority from '@magento/venia-ui/lib/components/Button/button.module.css';
+}
+
+.submitButton {
+    composes: root_highPriority from '@magento/venia-ui/lib/components/Button/button.module.css';
+
+    composes: col-start-auto from global;
+
+    composes: lg_col-start-2 from global;
+}
+
+.subscribe {
+    composes: -ml-1.5 from global;
+}
+
+.wapper{
+    max-width: 612px;
+    width: 100%;
+    margin: 0;
+    padding: 34.75px 115px 47px 116px;
+    display: block;
+}
+
+.title{
+    font-family: "Exo";
+    font-size: 32px;
+    line-height: 46px;
+    color: #1e24c0;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.signUpInput{
+    margin-bottom: 28px;
+}
+
+.btnGetOtp{
+    margin-top: 24px;
+    width: 100%;
+    padding-top: 17px ;
+    padding-bottom: 17px;
+}
+.inputTypeOtp{
+    margin-top: 24px;
+}
+.btnLogin{
+    width: 100%;
+    padding-top: 17px ;
+    padding-bottom: 17px;
+    margin-bottom: 28px;
+}
+.termInfo{
+    margin-top: 24px;
+    display: flex;
+}
+.term{
+    margin-top: 28px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #707070;
+    display: block;
+}
+.term  a{
+    color: #1E24C0;
+  }
+.or{
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #C4C4C4;
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+    color: #707070;
+ } 
+ 
+ .orSpan { 
+     background:#fff; 
+     padding:0 10px; 
+ }
+ .modalFooter {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-around;
+}
+.modalFooter img {
+    width: 78px;
+    height: 78px;
+}
+.registerLink{
+    margin-top: 28px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #707070;
+  }
+  .registerLink a{
+    color: #1E24C0;
+  }
+  @media screen and (max-width: 900px){
+    .root{
+        padding:31px 16px;
+    }
+  }

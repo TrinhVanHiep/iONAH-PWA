@@ -1,9 +1,10 @@
 import React from "react";
-import "./ProductItemsRecentlyView.css";
+import defaultClasses from './ProductItemsRecentlyView.module.css';
 import itemImg from "./img/tivi.png";
 import { IconRateStar } from "../../asset/Icons/Icon";
 import AddButon from "../AddButton/AddButton";
 import { formatMoney } from "../../common/commonFunctions";
+import { useStyle } from '@magento/venia-ui/lib/classify';
 
 const ProductItemsRecentlyView = ({
   totalRate,
@@ -12,15 +13,16 @@ const ProductItemsRecentlyView = ({
   itemId,
   handleAddToCompare,
 }) => {
+  const classes = useStyle(defaultClasses);
 
   const renderRate = (
-    <div className="item-rate">
+    <div className={classes.itemRate}>
       {[...Array(totalRate)].map((item, index) => {
         const listRate = index + 1;
         return (
           <i
             key={index}
-            className={`rate-icon ${listRate < currentRate || listRate === currentRate ? "rated" : ""
+            className={`${classes.rateIcon} ${listRate < currentRate || listRate === currentRate ? classes.ratedIcon : ""
               }`}
           >
             <IconRateStar />
@@ -31,11 +33,11 @@ const ProductItemsRecentlyView = ({
   );
 
   return (
-    <div className="items-recently-view">
+    <div className={classes.itemsRecentlyView}>
       <img src={itemImg} alt="item-img" />
-      <div className="item-information">
+      <div className={classes.itemInformation}>
         {renderRate}
-        <div className="item-price">
+        <div className={classes.itemPrice}>
           <span>{formatMoney(price)} vnd</span>
         </div>
         <AddButon
@@ -43,7 +45,7 @@ const ProductItemsRecentlyView = ({
           onClickButton={handleAddToCompare}
         />
       </div>
-    </div>
+    </div >
   );
 };
 

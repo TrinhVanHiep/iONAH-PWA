@@ -1,7 +1,8 @@
-import React from "react"
-import "./ProductItemsSuggest.css";
+import React from "react";
+import defaultClasses from './ProductItemsSuggest.module.css';
 import itemImg from "./img/wash-machine.png";
 import { formatMoney } from "../../common/commonFunctions";
+import { useStyle } from '@magento/venia-ui/lib/classify';
 
 const ProductItemsSuggest = ({
   itemId,
@@ -12,23 +13,25 @@ const ProductItemsSuggest = ({
   isSale,
   salePercent,
 }) => {
+  const classes = useStyle(defaultClasses);
+
   return (
-    <div className="product-items-suggest">
+    <div className={classes.productItemsSuggest}>
       <div className="item-img">
         <img src={img ? img : itemImg} alt="item-img" />
       </div>
-      <div className="items-detail">
+      <div className={classes.itemsDetail}>
         <div className="item-information">
-          <span className="item-name">{itemName} </span>
-          <span className="item-name">({itemCode})</span>
+          <span className={classes.itemName}>{itemName} </span>
+          <span className={classes.itemName}>({itemCode})</span>
           <br />
-          <span className="item-price">{formatMoney(itemPrice)}</span>
-          <br className="break-line" />
+          <span className={classes.itemPrice}>{formatMoney(itemPrice)}</span>
+          <br className={classes.breakLine} />
           {isSale ? (
             <>
-              <span className="item-old-price">{formatMoney(itemPrice)}</span>
-              <br className="break-line" />
-              <span className="item-sale-percent">{salePercent}%</span>
+              <span className={classes.itemOldPrice}>{formatMoney(itemPrice)}</span>
+              <br className={classes.breakLine} />
+              <span className={classes.itemSalePercent}>{salePercent}%</span>
             </>
           ) : null}
         </div>
