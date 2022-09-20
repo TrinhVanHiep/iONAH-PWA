@@ -1,4 +1,4 @@
-.select-sale-type {
+.selectSaleType {
 	box-sizing: border-box;
 	padding: 0 18px 14px 18px;
 	display: flex;
@@ -7,11 +7,11 @@
 	border-bottom: 1px solid #e4e4e4;
 }
 
-.select-sale-type .break-line {
+.selectSaleType .breakLine {
 	display: none;
 }
 
-.select-sale-type .item-img {
+.selectSaleType .itemImg {
 	max-width: 80px;
 	width: 100%;
 	display: flex;
@@ -20,23 +20,23 @@
 	margin-right: 20px;
 }
 
-.select-sale-type .item-img img {
+.selectSaleType .itemImg img {
 	width: 100%;
 }
 
-.select-sale-type .items-detail {
+.selectSaleType .itemsDetail {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
-.select-sale-type .items-detail .item-information {
+.selectSaleType .itemsDetail .itemInformation {
 	word-wrap: break-word;
 	width: 100%;
 }
 
-.select-sale-type .items-detail .item-information .item-header-sale {
+.selectSaleType .itemsDetail .itemInformation .itemHeaderSale {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -45,38 +45,38 @@
 }
 
 @media (max-width: 450px) {
-	.select-sale-type .items-detail .item-information .item-header-sale {
+	.selectSaleType .itemsDetail .itemInformation .itemHeaderSale {
 		align-items: flex-start;
 	}
 }
 
-.select-sale-type .items-detail .item-information .item-header-sale .list-tag-type {
+.selectSaleType .itemsDetail .itemInformation .itemHeaderSale .listTagType {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 }
 
-.select-sale-type .items-detail .item-information .item-header-sale .list-tag-type .tag-type {
+.selectSaleType .itemsDetail .itemInformation .itemHeaderSale .listTagType .tagType {
 	margin-right: 16px;
 }
 
 @media (max-width: 450px) {
-	.select-sale-type .items-detail .item-information .item-header-sale .list-tag-type .tag-type {
+	.selectSaleType .itemsDetail .itemInformation .itemHeaderSale .listTagType .tagType {
 		margin-bottom: 10px;
 	}
 }
 
-.select-sale-type .items-detail .item-information .item-header-sale i {
+.selectSaleType .itemsDetail .itemInformation .itemHeaderSale i {
 	width: 24.5px;
 	height: 24.5px;
 }
 
-.select-sale-type .items-detail .item-information .item-header-sale i svg {
+.selectSaleType .itemsDetail .itemInformation .itemHeaderSale i svg {
 	width: 24.5px;
 	height: 24.5px;
 }
 
-.select-sale-type .items-detail .item-information .item-sale-percent {
+.selectSaleType .itemsDetail .itemInformation .itemSalePercent {
 	font-family: 'Roboto', sans-serif;
 	font-style: normal;
 	font-weight: 600;
@@ -87,7 +87,7 @@
 	margin: 0;
 }
 
-.select-sale-type .items-detail .item-information .item-order {
+.selectSaleType .itemsDetail .itemInformation .itemOrder {
 	font-family: 'Roboto', sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -99,7 +99,7 @@
 	margin-bottom: 8px;
 }
 
-.select-sale-type .items-detail .item-information .item-date-exprie {
+.selectSaleType .itemsDetail .itemInformation .itemDateExprie {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -107,7 +107,7 @@
 	width: 100%;
 }
 
-.select-sale-type .items-detail .item-information .item-date-exprie .exprie-date {
+.selectSaleType .itemsDetail .itemInformation .itemDateExprie .exprieDate {
 	font-family: 'Roboto', sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -119,12 +119,12 @@
 }
 
 @media (max-width: 450px) {
-	.select-sale-type .items-detail .item-information .item-date-exprie ._button {
+	.selectSaleType .itemsDetail .itemInformation .itemDateExprie ._button {
 		margin-top: 15px;
 	}
 }
 
-.select-sale-type .items-detail .item-information .item-date-exprie ._button .btn {
+.selectSaleType .itemsDetail .itemInformation .itemDateExprie ._button .btn {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -145,25 +145,25 @@
 	box-sizing: border-box;
 }
 
-.select-sale-type .items-detail .item-information .item-date-exprie ._button .btn:hover {
+.selectSaleType .itemsDetail .itemInformation .itemDateExprie ._button .btn:hover {
 	color: #1e24c0;
 	background-color: #fff;
 	border: 3px solid #1e24c0;
 }
 
-.select-sale-type .items-detail .item-information .item-date-exprie ._button .btn-selected {
+.selectSaleType .itemsDetail .itemInformation .itemDateExprie ._button .btnSelected {
 	background: #f6f6f6;
 	color: #1e24c0;
 	border-color: transparent;
 }
 
-.select-sale-type .items-detail .item-information .item-date-exprie ._button .btn-selected:hover {
+.selectSaleType .itemsDetail .itemInformation .itemDateExprie ._button .btnSelected:hover {
 	background: #f6f6f6;
 	color: #1e24c0;
 	border-color: transparent;
 }
 
-.select-sale-type .items-detail .item-information .item-name {
+.selectSaleType .itemsDetail .itemInformation .itemName {
 	font-family: 'Roboto', sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -175,7 +175,7 @@
 }
 
 @media (max-width: 380px) {
-	.select-sale-type .item-img {
+	.selectSaleType .itemImg {
 		align-items: flex-start;
 	}
 }

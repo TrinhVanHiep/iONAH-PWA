@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import PopupChangeAddress from "../PopupChangeAddress/index"
 import ProductItemSelect from "../ProductItemSelect/ProductItemSelect"
 import ProductItemsRecentlyView from "../ProductItemsRecentlyView/ProductItemsRecentlyView"
+import ProductItemsSuggest from "../ProductItemsSuggest/ProductItemsSuggest";
+import SelectSaleType from "../SelectSaleType/SelectSaleType"
 const hi = {
   textAlign: "center",
   margin: "1rem",
@@ -28,6 +30,8 @@ const HomePage = () => {
         price={4000000000}
         currentRate={3}
       />
+      <ProductItemsSuggest itemName={"may giat cuc manh"} itemCode={"XFFF335F"} itemPrice={300000000} isSale={true} salePercent={20} />
+      <SelectSaleType isSelect={true} salePercent={30} orderPrice={20000} exprieDate={"20/20/2002"} exprieTime={"10:00"} listTag={[]} />
     </div>
   );
 };

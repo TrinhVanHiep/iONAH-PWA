@@ -1,10 +1,11 @@
 import React from "react";
-import "./SelectSaleType.css";
-import itemImg from "../../asset/img/ProductItemSale/momo.png";
+import defaultClasses from './SelectSaleType.module.css';
+import itemImg from "./img/momo.png";
 import { IconInformation } from "../../asset/Icons/Icon";
 import TagType from "../TagType/TagType";
 import Button from "../Button";
 import { formatMoney } from "../../common/commonFunctions";
+import { useStyle } from '@magento/venia-ui/lib/classify';
 
 const SelectSaleType = ({
   img,
@@ -16,6 +17,8 @@ const SelectSaleType = ({
   exprieDate,
   handleSelectSaleType,
 }) => {
+  const classes = useStyle(defaultClasses);
+
   const handleClick = () => {
     if (handleSelectSaleType) {
       handleSelectSaleType();
@@ -23,14 +26,14 @@ const SelectSaleType = ({
   };
 
   return (
-    <div className="select-sale-type">
-      <div className="item-img">
+    <div className={classes.selectSaleType}>
+      <div className={classes.itemImg}>
         <img src={img ? img : itemImg} alt="item-img" />
       </div>
-      <div className="items-detail">
-        <div className="item-information">
-          <div className="item-header-sale">
-            <div className="list-tag-type">
+      <div className={classes.itemsDetail}>
+        <div className={classes.itemInformation}>
+          <div className={classes.itemHeaderSale}>
+            <div className={classes.listTagType}>
               {listTag.map((item) => (
                 <TagType typeId={item.id} typeName={item.name} />
               ))}
@@ -39,16 +42,16 @@ const SelectSaleType = ({
               <IconInformation />
             </i>
           </div>
-          <p className="item-sale-percent">Giảm {salePercent}%</p>
-          <p className="item-order">
+          <p className={classes.itemSalePercent}>Giảm {salePercent}%</p>
+          <p className={classes.itemOrder}>
             Cho đơn hàng từ {formatMoney(orderPrice)} vnd
           </p>
-          <div className="item-date-exprie">
-            <span className="exprie-date">
+          <div className={classes.itemDateExprie}>
+            <span className={classes.exprieDate}>
               HSD: đến hết {exprieTime} ngày {exprieDate}
             </span>
             {isSelect ? (
-              <Button type="primary" className="btn-select" onClick={() => { }}>
+              <Button type="primary" className={classes.btnSelect} onClick={() => { }}>
                 Đã Chọn
               </Button>
             ) : (
@@ -59,7 +62,7 @@ const SelectSaleType = ({
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 
