@@ -1,0 +1,117 @@
+.product-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 54px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #C4C4C4;
+}
+@media (max-width: 600px) {
+  .product-item {
+    gap: 10px;
+  }
+}
+.product-item_content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 450px) {
+  .product-item_content ._button {
+    width: 100%;
+  }
+  .product-item_content ._button .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .product-item_content ._button .btn {
+    padding: 7.5px 8px;
+  }
+}
+.product-item_content div.content-inner {
+  max-width: 653px;
+  padding: 8px;
+}
+.product-item_content h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #282828;
+}
+@media (max-width: 600px) {
+  .product-item_content h4 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+.product-item_content h4.price {
+  font-weight: 400;
+}
+.product-item_content p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #707070;
+  margin: 8px 0 8.5px;
+}
+@media (max-width: 600px) {
+  .product-item_content p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+.product-item_content .option {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  margin-bottom: 8.5px;
+}
+@media (max-width: 600px) {
+  .product-item_content .option {
+    gap: 10px;
+  }
+}
+.product-item_content select {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: #282828;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+  border-radius: 2px;
+  padding: 8px 8px 8px 0;
+  padding-right: 2rem;
+}
+.product-item_content select option {
+  text-transform: capitalize;
+}
+@media (max-width: 600px) {
+  .product-item_content select {
+    font-size: 12px;
+    line-height: 14px;
+    background-position-y: 2px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

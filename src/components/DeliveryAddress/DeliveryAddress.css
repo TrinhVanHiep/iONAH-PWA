@@ -1,0 +1,82 @@
+.delivery-address {
+    padding:32px 24px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.delivery-address .delivery-address_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.delivery-address .delivery-address_top ._button {
+    padding-right: 106px;
+}
+.delivery-address h3{
+    font-family: 'Exo',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 46px;
+    letter-spacing: 0.04em;
+    color: #282828;
+}
+.delivery-address .delivery-address-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.delivery-address .delivery-address-item {
+    padding: 24px 0;
+    border-bottom: 1px solid #707070;
+}
+
+.delivery-address .delivery-address-item:first-child {
+    padding-top: 0;
+    /* border-bottom: 1px solid #707070; */
+}
+
+.delivery-address .delivery-address-item:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.delivery-address .delivery-address-item .address-radio{
+    padding-bottom: 0;
+    border: none;
+}
+
+.delivery-address .delivery-address-item .action{
+    width: 200px;
+}
+.delivery-address .delivery-address-item .action .action-edit{
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    text-decoration-line: underline;
+    color: #1E24C0;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.delivery-address .delivery-address-item .action .action-delete{
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #EC4040;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .delivery-address .delivery-address_top{
+        display: none;
+       }
+}
