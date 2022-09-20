@@ -1,0 +1,181 @@
+.select-sale-type {
+	box-sizing: border-box;
+	padding: 0 18px 14px 18px;
+	display: flex;
+	margin-bottom: 13px;
+	background-color: #fff;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.select-sale-type .break-line {
+	display: none;
+}
+
+.select-sale-type .item-img {
+	max-width: 80px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-right: 20px;
+}
+
+.select-sale-type .item-img img {
+	width: 100%;
+}
+
+.select-sale-type .items-detail {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.select-sale-type .items-detail .item-information {
+	word-wrap: break-word;
+	width: 100%;
+}
+
+.select-sale-type .items-detail .item-information .item-header-sale {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 8px;
+}
+
+@media (max-width: 450px) {
+	.select-sale-type .items-detail .item-information .item-header-sale {
+		align-items: flex-start;
+	}
+}
+
+.select-sale-type .items-detail .item-information .item-header-sale .list-tag-type {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.select-sale-type .items-detail .item-information .item-header-sale .list-tag-type .tag-type {
+	margin-right: 16px;
+}
+
+@media (max-width: 450px) {
+	.select-sale-type .items-detail .item-information .item-header-sale .list-tag-type .tag-type {
+		margin-bottom: 10px;
+	}
+}
+
+.select-sale-type .items-detail .item-information .item-header-sale i {
+	width: 24.5px;
+	height: 24.5px;
+}
+
+.select-sale-type .items-detail .item-information .item-header-sale i svg {
+	width: 24.5px;
+	height: 24.5px;
+}
+
+.select-sale-type .items-detail .item-information .item-sale-percent {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 23px;
+	text-transform: capitalize;
+	color: #282828;
+	margin: 0;
+}
+
+.select-sale-type .items-detail .item-information .item-order {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	letter-spacing: 0.01em;
+	color: #707070;
+	margin: 0;
+	margin-bottom: 8px;
+}
+
+.select-sale-type .items-detail .item-information .item-date-exprie {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.select-sale-type .items-detail .item-information .item-date-exprie .exprie-date {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 0.01em;
+	color: #707070;
+	margin: 0;
+}
+
+@media (max-width: 450px) {
+	.select-sale-type .items-detail .item-information .item-date-exprie ._button {
+		margin-top: 15px;
+	}
+}
+
+.select-sale-type .items-detail .item-information .item-date-exprie ._button .btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 4px 8px;
+	gap: 8px;
+	min-width: 54px;
+	height: 26px;
+	background: #1e24c0;
+	border-radius: 4px;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	letter-spacing: 0.01em;
+	color: #fff;
+	box-sizing: border-box;
+}
+
+.select-sale-type .items-detail .item-information .item-date-exprie ._button .btn:hover {
+	color: #1e24c0;
+	background-color: #fff;
+	border: 3px solid #1e24c0;
+}
+
+.select-sale-type .items-detail .item-information .item-date-exprie ._button .btn-selected {
+	background: #f6f6f6;
+	color: #1e24c0;
+	border-color: transparent;
+}
+
+.select-sale-type .items-detail .item-information .item-date-exprie ._button .btn-selected:hover {
+	background: #f6f6f6;
+	color: #1e24c0;
+	border-color: transparent;
+}
+
+.select-sale-type .items-detail .item-information .item-name {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	letter-spacing: 0.01em;
+	color: #282828;
+	margin: 0;
+}
+
+@media (max-width: 380px) {
+	.select-sale-type .item-img {
+		align-items: flex-start;
+	}
+}

@@ -1,0 +1,21 @@
+.account {
+  width: 100%;
+  padding: 60px 190px;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+}
+
+.account .account-menu {
+  width: 24.026%;
+  height: auto;
+}
+
+.account .account-content {
+  max-width: 1150px;
+  width: 76%;
+  height: auto;
+  background: #fff;
+  border-radius: 8px;
+}

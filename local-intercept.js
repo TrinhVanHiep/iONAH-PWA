@@ -38,6 +38,14 @@ function localIntercept(targets) {
             path: require.resolve('./src/Pages/About')
         });
     });
+    targets.of('@magento/venia-ui').routes.tap(routes => {
+        routes.push({
+            name: 'Account Page',
+            pattern: '/account',
+            exact: true,
+            path: require.resolve('./src/Pages/Account')
+        });
+    });
 }
 
 module.exports = localIntercept;
