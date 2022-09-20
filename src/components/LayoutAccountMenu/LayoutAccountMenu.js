@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import "./LayoutAccountMenu.css";
+import defaultClasses from './LayoutAccountMenu.module.css';
+import { useStyle } from '@magento/venia-ui/lib/classify';
 
 function LayoutAccountMenu({ item, currentPath }) {
+  const classes = useStyle(defaultClasses);
   const [activeLink, setActiveLink] = useState("")
 
   useEffect(() => {
@@ -12,12 +14,12 @@ function LayoutAccountMenu({ item, currentPath }) {
   }, [currentPath])
 
   return (
-    <ul className="layout-account-menu">
-      <li className="menu-items">
-        <p className="menu-items__name">{item.name}</p>
-        <ul className="sub-menu">
+    <ul className={classes.layoutAccountMenu}>
+      <li className={classes.menuItems}>
+        <p className={classes.menuItemsName}>{item.name}</p>
+        <ul className={classes.subMenu}>
           {item?.listSubItem && item?.listSubItem?.map((subMenu) => (
-            <li className={`sub-menu__item ${activeLink === subMenu.url ? "active" : ""} `}>
+            <li className={`${classes.subMenuItem} ${activeLink === subMenu.url ? "active" : ""} `}>
               <NavLink
                 to={`/account/${item.url}/${subMenu.url}`}
                 key={subMenu.name}

@@ -7,15 +7,14 @@
   justify-content: space-between;
 }
 
-.account .account-menu {
+.account .accountMenu {
   width: 24.026%;
   height: auto;
 }
 
-.account .account-content {
+.account .accountContent {
   max-width: 1150px;
   width: 75%;
   height: auto;
-  background: #fff;
   border-radius: 8px;
 }

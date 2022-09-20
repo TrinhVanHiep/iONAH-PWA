@@ -1,4 +1,4 @@
-.layout-account-menu {
+.layoutAccountMenu {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
   width: 100%;
 }
 
-.layout-account-menu .menu-items__name {
+.layoutAccountMenu .menuItemsName {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -23,16 +23,16 @@
   margin-bottom: 8px;
 }
 
-.layout-account-menu .menu-items .sub-menu {
+.layoutAccountMenu .menuItems .subMenu {
   padding-left: 16px;
 }
 
-.layout-account-menu .menu-items .sub-menu__item {
+.layoutAccountMenu .menuItems .subMenuItem {
   margin-bottom: 4px;
   cursor: pointer;
 }
 
-.layout-account-menu .menu-items .sub-menu__item a {
+.layoutAccountMenu .menuItems .subMenuItem a {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -42,11 +42,11 @@
   color: #707070;
 }
 
-.layout-account-menu .menu-items .sub-menu .active {
+.layoutAccountMenu .menuItems .subMenu .active {
   margin-bottom: 4px;
 }
 
-.layout-account-menu .menu-items .sub-menu .active a {
+.layoutAccountMenu .menuItems .subMenu .active a {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 600;
