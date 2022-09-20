@@ -1,7 +1,9 @@
 import React from "react";
+import AccountInformationPage from "../../components/AccountInformationPage";
+import WishList from "../../components/WishList/WishList";
 // import AccountInformation from "../AccountInformation";
 import AllOrder from "../AllOrder";
-import BillingInformation from "../BillingInformation";
+import BillingInformation from "../BillingInformation/BillingInformation";
 import DeliveryAddress from "../DeliveryAddress";
 import GeneralNotification from "../Notifications/GeneralNotification";
 import OrderNotification from "../Notifications/OrderNotification";
@@ -18,7 +20,7 @@ export const menuList = [
         id: 1,
         name: "Thông tin tài khoản",
         url: "account-information",
-        component: ""
+        component: <AccountInformationPage />
       },
       {
         id: 2,
@@ -36,7 +38,7 @@ export const menuList = [
         id: 4,
         name: "Sản phẩm yêu thích",
         url: "wish-list",
-        component: ""
+        component: <WishList />
       },
     ]
   },

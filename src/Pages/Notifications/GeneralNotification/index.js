@@ -1,9 +1,2 @@
-import React from 'react'
+export { default } from "./GeneralNotification";
 
-function GeneralNotification() {
-  return (
-    <div>GeneralNotification</div>
-  )
-}
-
-export default GeneralNotification

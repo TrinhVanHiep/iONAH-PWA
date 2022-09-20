@@ -41,7 +41,33 @@ function localIntercept(targets) {
     targets.of('@magento/venia-ui').routes.tap(routes => {
         routes.push({
             name: 'Account Page',
-            pattern: '/account',
+            pattern: '/account/:source?',
+            exact: true,
+            path: require.resolve('./src/Pages/Account')
+        });
+    });
+    targets.of('@magento/venia-ui').routes.tap(routes => {
+        routes.push({
+            name: 'User Information',
+            pattern: '/account/my-account/:source?',
+            exact: true,
+            path: require.resolve('./src/Pages/Account')
+        });
+    });
+
+    targets.of('@magento/venia-ui').routes.tap(routes => {
+        routes.push({
+            name: 'Manage Order',
+            pattern: '/account/order-manage/:source?',
+            exact: true,
+            path: require.resolve('./src/Pages/Account')
+        });
+    });
+
+    targets.of('@magento/venia-ui').routes.tap(routes => {
+        routes.push({
+            name: 'Notifications',
+            pattern: '/account/notification/:source?',
             exact: true,
             path: require.resolve('./src/Pages/Account')
         });
