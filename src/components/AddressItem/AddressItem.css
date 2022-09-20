@@ -1,0 +1,176 @@
+.address-radio {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    border-bottom: 1px solid #707070;
+    padding-bottom: 24px;
+    padding-top: 24px;
+  }
+.address-radio .text-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #282828;
+}
+.address-radio .text-label {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #282828;
+}
+ .text-content {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #282828;
+}
+
+.address-radio .text-content:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.address-radio:first-child {
+    padding-top: 0;
+  }
+ .address-radio:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+.address-radio img {
+    cursor: pointer;
+  }
+.address-radio [type=radio]:checked,
+.address-radio [type=radio]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+  }
+.address-radio [type=radio]:checked + label,
+.address-radio [type=radio]:not(:checked) + label {
+    position: relative;
+    padding-left: 52px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+  }
+ .address-radio [type=radio]:checked + label:before,
+.address-radio [type=radio]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 27px;
+    height: 27px;
+    border: 2px solid #C4C4C4;
+    border-radius: 100%;
+    background: #fff;
+    box-sizing: border-box;
+  }
+ .address-radio [type=radio]:checked + label:after,
+.address-radio [type=radio]:not(:checked) + label:after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #1E24C0;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+.address-radio [type=radio]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+.address-radio [type=radio]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+.address-radio_content span {
+    display: block;
+  }
+.address-radio_content__name {
+    display: flex;
+    align-items: flex-start;
+    gap: 19px;
+    margin-bottom: 12px;
+  }
+  @media (max-width: 620px) {
+.address-radio_content__name {
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 11px;
+    }
+  }
+  @media (max-width: 450px) {
+ .address-radio_content__name .text-title {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+  }
+ .address-radio_content__name .btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+ .address-radio_content__name .btn button {
+    box-sizing: border-box;
+    background-color: white;
+    border: none;
+    outline: none;
+    padding: 3px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    -webkit-user-select: none;
+    user-select: none;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    border: 1px solid #1E24C0;
+    letter-spacing: 0.01em;
+    color: #1E24C0;
+  }
+  @media (max-width: 450px) {
+ .address-radio_content__name .btn {
+      gap: 4px;
+    }
+  }
+.address-radio_content .text-label, .shipping-address-popup-overlay .shipping-address-popup .address-radio_content .text-content:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+@media (max-width: 600px) {
+  .address-radio .text-title {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .address-radio .text-label {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .address-radio .text-content {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  }
