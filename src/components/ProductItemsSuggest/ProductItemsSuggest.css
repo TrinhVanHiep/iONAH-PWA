@@ -1,0 +1,91 @@
+.product-items-suggest {
+	box-sizing: border-box;
+	padding: 0 0 14px 0;
+	display: flex;
+	margin-bottom: 13px;
+	background-color: #fff;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.product-items-suggest .break-line {
+	display: none;
+}
+
+.product-items-suggest .item-img {
+	max-width: 80px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-right: 16px;
+}
+
+.product-items-suggest .item-img img {
+	width: 100%;
+}
+
+.product-items-suggest .items-detail {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.product-items-suggest .items-detail .item-information {
+	word-wrap: break-word;
+}
+
+.product-items-suggest .items-detail .item-information .item-name {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	letter-spacing: 0.01em;
+	color: #282828;
+	margin: 0;
+}
+
+.product-items-suggest .items-detail .item-information .item-price {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 28px;
+	text-transform: capitalize;
+	color: #282828;
+	margin-right: 8px;
+	margin: 8px 8px 0 0;
+}
+
+.product-items-suggest .items-detail .item-information .item-old-price {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	letter-spacing: 0.01em;
+	text-decoration-line: line-through;
+	color: #282828;
+	margin-right: 8px;
+}
+
+.product-items-suggest .items-detail .item-information .item-sale-percent {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	letter-spacing: 0.01em;
+	color: #282828;
+}
+
+@media (max-width: 380px) {
+	.product-items-suggest .break-line {
+		display: block;
+	}
+
+	.product-items-suggest .item-img {
+		align-items: flex-start;
+	}
+}

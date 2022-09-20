@@ -3,7 +3,7 @@ import React, { Children, useEffect, useState } from 'react'
 // import Footer from "../Footer/Footer";
 import "./style.css";
 
-function Layout({children, showFooter=true}) {
+function Layout({ children, showFooter = true }) {
   const [height, setHeight] = useState(0);
   const handleScroll = () => {
     let scrollTop = window.scrollY;
@@ -17,9 +17,9 @@ function Layout({children, showFooter=true}) {
   }, [])
   return (
     <div class="page-container">
-    {/* <Header heightsPage={height}/> */}
-    {children}
-    {/* {showFooter &&  <Footer/>} */}
+      {/* <Header heightsPage={height}/> */}
+      {children}
+      {/* {showFooter &&  <Footer/>} */}
     </div>
   )
 }
