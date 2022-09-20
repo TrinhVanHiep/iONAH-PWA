@@ -1,0 +1,19 @@
+.root {
+
+}
+
+/* Pagebuilder Catalog Product */
+h2 {
+    font-size: 32px;
+    line-height: 46px;
+    letter-spacing: 0.04em;
+    color: #282828;
+    margin-top: 2px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #555;
+}

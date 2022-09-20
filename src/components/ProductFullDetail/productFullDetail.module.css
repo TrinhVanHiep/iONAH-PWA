@@ -1,0 +1,173 @@
+.breads {
+    display: none;
+}
+
+.root {
+    margin-top: 41px;
+}
+
+.imageCarousel {
+    border-radius: 8px;
+    border: 1px solid #C4C4C4;
+}
+
+.col {
+    padding: 0 22px;
+}
+
+.attrSale {
+    display: flex;
+}
+
+.attrName {
+    margin-right: 10px;
+    padding: 4px 8px;
+    border: 1px solid #1E24C0;
+    color: #1E24C0;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+}
+
+.title {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.productName {
+    color: #282828;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.name {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: capitalize;
+}
+
+.sku {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #818181;
+}
+
+.salePricePercent {
+    width: 48px;
+    height: 19px;
+    background: #F24D4D;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #fff;
+    margin-left: 12px;
+    justify-content: center;
+}
+
+.salePrice {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.04em;
+    text-decoration-line: line-through;
+    color: #818181;
+    margin-left: 29px;
+}
+
+.productPrice {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #1E24C0;
+}
+
+.verifyBy {
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+}
+
+.review {
+    margin-top: 11px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #555;
+    margin-top: 11.5px;
+}
+
+.contentText {
+    height: 77px;
+    overflow: hidden;
+}
+
+.options {
+    margin: 10px 0;
+    padding: 10px 0;
+    border: 1px solid #C4C4C4;
+    border-left: none;
+    border-right: none;
+}
+
+.headingT {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    color: #555;
+}
+
+.viewMoreText {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    text-decoration-line: underline;
+    color: #1E24C0;
+}
+
+.verifyIcon {
+    display: flex;
+    align-items: center;
+    gap: 5.75px;
+}
+
+.addTo {
+    display: flex;
+    margin-top: 16px;
+}
+
+.addWishlist {
+    margin-left: 25px;
+}
+
+.right {
+    margin-top: 46px;
+}
+
+.subPromotion {
+    margin-top: 10px;
+    padding: 12px 20px;
+}
+
+@media (min-width: 960px) {
+    .breads {
+        display: block;
+    }
+}
