@@ -1,0 +1,29 @@
+.orderItem {
+    padding:0 40px 40px 40px;
+}
+.orderItemHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.orderItemHeader h3{
+    font-size: 24px;
+    line-height: 28.13px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    font-weight: 500;
+}
+.orderItemHeader h3:last-child {
+    color: #1E24C0;
+}
+.orderItemElement {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 32px;
+}
+.orderItemElement .orderItemElementInfo {
+    /* display: flex; */
+}
+.orderItemElement img {
+    margin-right: 54px;
+}
