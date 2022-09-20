@@ -1,0 +1,659 @@
+.productCard {
+    padding: 16px 12px 9px;
+    gap: 8px;
+    width: 270px;
+    background: #fff;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+}
+.productCard .productTop {
+    display: flex;
+    margin-bottom: 8px;
+}
+.productCard .productTop .buttonSale {
+    margin-right: 9px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+    border: 1px solid #1e24c0;
+    border-radius: 4px;
+    color: #1e24c0;
+    background: #fff;
+    min-width: 0;
+    height: 25px;
+}
+.productCard .productImage {
+    width: 270px;
+    height: 193px;
+    margin-bottom: 8px;
+}
+.productCard .productName {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #282828;
+    margin-bottom: 8px;
+    text-align: start;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.productCard .productPriceSale {
+    height: 20px;
+    margin-bottom: 8px;
+    align-items: center;
+    display: flex;
+}
+.productCard .productPriceSale .priceLeft {
+    display: flex;
+    height: 20px;
+    width: auto;
+    margin-right: 48px;
+}
+.productCard .productPriceSale .priceLeft .priceSale {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    text-decoration-line: line-through;
+    color: #818181;
+    margin: 0px;
+    margin-right: 23px;
+}
+.productCard .productPriceSale .priceLeft .salePercent {
+    margin: 0px;
+    width: 48px;
+    height: 20px;
+    background: #f24d4d;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #fff;
+}
+.productCard .productPriceSale .productEvaluate {
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+.productCard .productPriceSale .productEvaluate .numberEvaluate {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #ffcd4b;
+    margin-right: 4px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 20px;
+}
+.productCard .productPriceSale .productEvaluate .starEvaluate {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+.productCard .productPriceSale .productEvaluate .totalEvaluate {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #c4c4c4;
+    margin: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.productCard .productPrice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    height: 28px;
+    margin-bottom: 8px;
+}
+.productCard .productPrice .price {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #1e24c0;
+    margin: 0px;
+}
+.productCard .productPrice .productLike {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: #fff;
+    padding: 0px;
+    min-width: 0;
+}
+.productCard .productPrice .productLike .iconLike {
+    width: 20px;
+    height: 20px;
+}
+.productCard .productDes {
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #d9d9d9;
+    transform: rotate(-0.21deg);
+    display: flex;
+    flex-wrap: wrap;
+}
+.productCard .productDes .buttonDes {
+    padding: 10px;
+    gap: 10px;
+    background: #ececec;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.01em;
+    color: #555;
+    border: none;
+    height: 23px;
+    margin-right: 8px;
+    min-width: 0;
+}
+.productCard .bank {
+    display: flex;
+    flex-wrap: wrap;
+}
+.productCard .bank .buttonBank {
+    width: 37px;
+    height: 37px;
+    border: 0.5px solid #c4c4c4;
+    border-radius: 30px;
+    margin-right: 8px;
+    padding: 0;
+    margin-bottom: 8px;
+    background: #fff;
+    min-width: 0;
+}
+.productCard .bank .buttonBank .iconBank {
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+}
+.productCard .textDes {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #818181;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.productCard .bankPay {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.productCard .bankPay .buttonPay {
+    width: 72px;
+    height: 36px;
+    margin-right: 8px;
+    background: #fff;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+    padding: 0;
+    margin-bottom: 8px;
+    min-width: 0;
+}
+.productCard .bankPay .buttonPay .iconPay {
+    width: 68px;
+    height: 32px;
+}
+.productCard .productBottom {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.productCard .productBottom .iconTich {
+    width: 30px;
+    height: 30px;
+    margin-right: 9px;
+}
+.productCard .productBottom .textSs {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #555;
+    margin-right: 28px;
+}
+.productCard .productBottom .buttonMn {
+    align-items: center;
+    padding: 6px 36px;
+    background: #f24d4d;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #fff;
+    border: none;
+    min-width: 0;
+}
+.productCard .productSl {
+    height: 25px;
+    background: #ececec;
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: 8px;
+}
+.productCard .productSl .slDb {
+    height: 25px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(90deg, #f2b04d 26.64%, #e22424 96.72%);
+    border-radius: 4px;
+    align-items: center;
+    display: flex;
+}
+.productCard .productSl .slDb .imageSl {
+    width: 14px;
+    height: 19px;
+    margin-right: 12px;
+    margin-left: 6px;
+}
+.productCard .productSl .slDb .textSl {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #fff;
+}
+.productCard .productStock {
+    width: 270px;
+    height: 170px;
+    position: relative;
+    margin-bottom: 8px;
+}
+.productCard .productStock .productImage {
+    width: 100%;
+    height: 100%;
+}
+.productCard .productStock .stockPop {
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42));
+    align-items: center;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+.productCard .productStock .stockPop .imageStock {
+    width: 53px;
+    height: 53px;
+    margin-bottom: 9.5px;
+    margin-top: 33.5px;
+}
+.productCard .productStock .stockPop .nameStock {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #fff;
+    margin: 0;
+}
+.productCard .productNotImage {
+    width: 270px;
+    height: 170px;
+    background: #d9d9d9;
+}
+@media (max-width: 600px) {
+    .productCard {
+        padding: 16px 12px 9px;
+        gap: 8px;
+        width: 162px;
+        background: #fff;
+        border: 1px solid #c4c4c4;
+        border-radius: 8px;
+   }
+    .productCard .productTop {
+        display: flex;
+        margin-bottom: 4px;
+   }
+    .productCard .productTop .buttonSale {
+        margin-right: 4px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.01em;
+        border: 1px solid #1e24c0;
+        border-radius: 4px;
+        color: #1e24c0;
+        background: #fff;
+        min-width: 0;
+        padding: 4px;
+        height: 20px;
+   }
+    .productCard .productImage {
+        width: 100%;
+        height: 138px;
+        margin-bottom: 8px;
+   }
+    .productCard .productName {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.04em;
+        text-transform: capitalize;
+        color: #282828;
+        margin-bottom: 8px;
+        text-align: start;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+   }
+    .productCard .productPriceSale {
+        height: auto;
+        margin-bottom: 8px;
+        align-items: center;
+        display: block;
+        width: 100%;
+   }
+    .productCard .productPriceSale .priceLeft {
+        display: flex;
+        height: 18px;
+        width: 100%;
+        margin-bottom: 4.5px;
+        justify-content: space-between;
+   }
+    .productCard .productPriceSale .priceLeft .priceSale {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+        text-decoration-line: line-through;
+        color: #818181;
+        margin: 0px;
+   }
+    .productCard .productPriceSale .priceLeft .salePercent {
+        margin: 0px;
+        width: 48px;
+        height: 20px;
+        background: #f24d4d;
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #fff;
+   }
+    .productCard .productPriceSale .productEvaluate {
+        display: flex;
+        align-items: center;
+        height: 20px;
+   }
+    .productCard .productPriceSale .productEvaluate .numberEvaluate {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+        color: #ffcd4b;
+        margin-right: 4px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        height: 20px;
+   }
+    .productCard .productPriceSale .productEvaluate .starEvaluate {
+        width: 20px;
+        height: 20px;
+        margin-right: 12px;
+   }
+    .productCard .productPriceSale .productEvaluate .totalEvaluate {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        color: #c4c4c4;
+        margin: 0px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+   }
+    .productCard .productPrice {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        height: 23px;
+        margin-bottom: 8px;
+   }
+    .productCard .productPrice .price {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 23px;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        color: #1e24c0;
+        margin: 0px;
+   }
+    .productCard .productPrice .productLike {
+        width: 20px;
+        height: 17.5px;
+        border: none;
+        background: #fff;
+        padding: 0px;
+        min-width: 0;
+        margin-right: 12px;
+   }
+    .productCard .productPrice .productLike .iconLike {
+        width: 20px;
+        height: 17.5px;
+   }
+    .productCard .productDes {
+        padding-bottom: 8px;
+        border-bottom: 1px solid #d9d9d9;
+        transform: rotate(-0.21deg);
+        display: flex;
+        flex-wrap: wrap;
+   }
+    .productCard .productDes .buttonDes {
+        padding: 4px;
+        gap: 10px;
+        background: #ececec;
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        letter-spacing: 0.01em;
+        color: #555;
+        border: none;
+        height: 23px;
+        margin-right: 8px;
+        min-width: 0;
+        margin-bottom: 8px;
+   }
+    .productCard .bank {
+        display: flex;
+        flex-wrap: wrap;
+   }
+    .productCard .bank .buttonBank {
+        width: 24px;
+        height: 24px;
+        border: 0.5px solid #c4c4c4;
+        border-radius: 24px;
+        margin-right: 8px;
+        padding: 0;
+        margin-bottom: 8px;
+        background: #fff;
+        min-width: 0;
+   }
+    .productCard .bank .buttonBank .iconBank {
+        width: 22px;
+        height: 22px;
+        border-radius: 24px;
+   }
+    .productCard .textDes {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: #818181;
+        margin-top: 0;
+        margin-bottom: 8px;
+   }
+    .productCard .bankPay {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 8px;
+        border-bottom: 1px solid #d9d9d9;
+   }
+    .productCard .bankPay .buttonPay {
+        width: 72px;
+        height: 36px;
+        margin-right: 8px;
+        background: #fff;
+        border: 1px solid #c4c4c4;
+        border-radius: 4px;
+        padding: 0;
+        margin-bottom: 8px;
+        min-width: 0;
+   }
+    .productCard .bankPay .buttonPay .iconPay {
+        width: 68px;
+        height: 32px;
+   }
+    .productCard .productBottom {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+   }
+    .productCard .productBottom .iconTich {
+        width: 30px;
+        height: 30px;
+        margin-right: 9px;
+        margin-bottom: 2px;
+   }
+    .productCard .productBottom .textSs {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+        color: #555;
+        margin-right: 28px;
+        margin: 0;
+        margin-bottom: 2px;
+   }
+    .productCard .productBottom .buttonMn {
+        align-items: center;
+        padding: auto;
+        background: #f24d4d;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #fff;
+        border: none;
+        width: 162px;
+   }
+    .productCard .productSl {
+        height: 25px;
+        background: #ececec;
+        border-radius: 4px;
+        position: relative;
+        margin-bottom: 8px;
+   }
+    .productCard .productSl .slDb {
+        height: 25px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background: linear-gradient(90deg, #f2b04d 26.64%, #e22424 96.72%);
+        border-radius: 4px;
+        align-items: center;
+        display: flex;
+   }
+    .productCard .productSl .slDb .imageSl {
+        width: 10px;
+        height: 12px;
+        margin-right: 4px;
+        margin-left: 4px;
+   }
+    .productCard .productSl .slDb .textSl {
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: capitalize;
+        color: #fff;
+   }
+    .productCard .productStock {
+        width: 100%;
+        height: 138px;
+        position: relative;
+        margin-bottom: 8px;
+   }
+    .productCard .productStock .productImage {
+        width: 100%;
+        height: 100%;
+   }
+    .productCard .productStock .stockPop {
+        width: 100%;
+        height: 138px;
+        position: absolute;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42));
+        align-items: center;
+        top: 0;
+        left: 0;
+        text-align: center;
+   }
+    .productCard .productStock .stockPop .imageStock {
+        width: 53px;
+        height: 53px;
+        margin-bottom: 9.5px;
+        margin-top: 33.5px;
+   }
+    .productCard .productStock .stockPop .nameStock {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0.01em;
+        color: #fff;
+        margin: 0;
+   }
+    .productCard .productNotImage {
+        width: 100%;
+        height: 138px;
+        background: #d9d9d9;
+   }
+}
