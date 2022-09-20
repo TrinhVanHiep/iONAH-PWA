@@ -16,7 +16,6 @@ function LayoutAccountMenu({ item, currentPath }) {
       <li className="menu-items">
         <p className="menu-items__name">{item.name}</p>
         <ul className="sub-menu">
-
           {item?.listSubItem && item?.listSubItem?.map((subMenu) => (
             <li className={`sub-menu__item ${activeLink === subMenu.url ? "active" : ""} `}>
               <NavLink
@@ -33,4 +32,4 @@ function LayoutAccountMenu({ item, currentPath }) {
   )
 }
 
-export default LayoutAccountMenu
+export default LayoutAccountMenu;

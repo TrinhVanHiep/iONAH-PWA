@@ -3,7 +3,7 @@ import "./Account.css";
 import Layout from '../../components/Layout';
 import LayoutAccountMenu from '../../components/LayoutAccountMenu/LayoutAccountMenu';
 import { menuList } from "./helper"
-import { Route, Routes } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 function Account() {
   const currentPath = window.location.pathname
@@ -16,20 +16,18 @@ function Account() {
           ))}
         </div>
         <div className="account-content">
-          {/* <Routes>
-            {menuList.map((element, index) => (
-              <>
-                {element.listSubItem.map((item, index) => (
-                  <Route
-                    path={`${element.url}/${item.url}`}
-                    element={item.component}
-                    key={String(index)}
-                  />
-                ))}
-              </>
-            ))}
-          </Routes> */}
-          this is account page
+          {menuList.map((element, index) => (
+            <>
+              {element.listSubItem.map((item, index) => (
+                <Route
+                  path={`/account/${element.url}/${item.url}`}
+                  key={String(index)}
+                >
+                  {item.component}
+                </Route>
+              ))}
+            </>
+          ))}
         </div>
       </div>
     </Layout>
