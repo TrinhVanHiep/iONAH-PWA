@@ -1,0 +1,109 @@
+.root {
+  composes: grid from global;
+  composes: px-lg from global;
+  composes: py-md from global;
+  padding: 32px 24px;
+  box-sizing: border-box;
+}
+
+.title {
+  composes: font-bold from global;
+  composes: font-serif from global;
+  font-family: 'Exo', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 46px;
+  letter-spacing: 0.04em;
+  color: #282828;
+  margin-bottom: 40px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accountDetails {
+  composes: gap-y-md from global;
+  composes: grid from global;
+  composes: grid-cols-1 from global;
+
+  composes: lg_grid-cols-3 from global;
+}
+
+.lineItemsContainer {
+  composes: gap-3 from global;
+  composes: grid from global;
+  composes: grid-cols-1 from global;
+  composes: leading-normal from global;
+  grid-column: 1 / span 1;
+
+  composes: lg_gap-xs from global;
+  composes: lg_grid-cols-2 from global;
+}
+
+.lineItemLabel {
+  composes: font-bold from global;
+}
+
+.nameLabel,
+.emailLabel,
+.passwordLabel {
+  composes: font-bold from global;
+}
+
+.nameValue,
+.emailValue,
+.passwordValue {}
+
+.editButtonContainer {
+  grid-column: 1 / span 1;
+  composes: text-center from global;
+}
+
+.userInformation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.userAvatar {
+  width: 23.04%;
+  text-align: center;
+}
+
+.userAvatar .selectImage {
+  margin-bottom: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #707070;
+}
+
+.userAvatar img {
+  max-width: 93px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+
+.userAvatar .btnSelectImage {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #1E24C0;
+  max-width: 240px;
+  width: 100%;
+}
+
+/* .editInformationButton {
+    composes: root_normalPriority from '../Button/button.module.css';
+} */
