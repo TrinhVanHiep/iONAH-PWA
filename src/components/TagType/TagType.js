@@ -1,9 +1,12 @@
-import "./TagType.css"
+import "./TagType.css";
+import { useStyle } from '@magento/venia-ui/lib/classify';
+import defaultClasses from './TagType.module.css';
 
 const TagType = ({ typeId, typeName }) => {
+  const classes = useStyle(defaultClasses);
   return (
-    <div key={typeId} className="tag-type">
-      <span className="tag-type__title">{typeName}</span>
+    <div key={typeId} className={classes.TagType}>
+      <span className={classes.tagTypeTitle}>{typeName}</span>
     </div>
   )
 }

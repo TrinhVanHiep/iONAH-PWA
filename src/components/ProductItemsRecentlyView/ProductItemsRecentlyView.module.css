@@ -1,0 +1,63 @@
+.itemsRecentlyView {
+	max-width: 240px;
+	width: 100%;
+}
+
+.itemsRecentlyView img {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.itemsRecentlyView .itemInformation {
+	width: 100%;
+	text-align: center;
+}
+
+.itemsRecentlyView .itemInformation .itemRate {
+	margin-bottom: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.itemsRecentlyView .itemInformation .itemRate .rateIcon {
+	margin-right: 14px;
+}
+
+.itemsRecentlyView .itemInformation .itemRate .rateIcon:last-child {
+	margin-right: 0;
+}
+
+.itemsRecentlyView .itemInformation .itemRate .rateIcon svg {
+	fill: #c4c4c4;
+	width: 20px;
+	height: 19px;
+}
+
+.itemsRecentlyView .itemInformation .itemRate .rateIcon .rated svg {
+	fill: #ffcd4b !important;
+	width: 20px;
+	height: 19px;
+}
+
+.ratedIcon svg {
+	fill: #ffcd4b !important;
+	width: 20px;
+	height: 19px;
+}
+
+.itemsRecentlyView .itemInformation .itemPrice {
+	margin-bottom: 20px;
+}
+
+.itemsRecentlyView .itemInformation .itemPrice span {
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	letter-spacing: 0.04em;
+	color: #000;
+	text-transform: lowercase;
+}

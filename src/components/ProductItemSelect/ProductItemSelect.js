@@ -1,8 +1,9 @@
 import React from "react";
-import "./ProductItemSelect.css";
 import itemImg from "./img/tivi.png";
 import { formatMoney } from "../../common/commonFunctions";
 import AddButon from "../AddButton/AddButton";
+import defaultClasses from './ProductItemSelect.module.css';
+import { useStyle } from '@magento/venia-ui/lib/classify';
 
 const ProductItemSelect = ({
   itemId,
@@ -11,15 +12,17 @@ const ProductItemSelect = ({
   itemPrice,
   handleAddToSearch,
 }) => {
+  const classes = useStyle(defaultClasses);
+
   return (
-    <div className="product-items-select">
-      <div className="item-img">
+    <div className={classes.productItemsSelect}>
+      <div className={classes.itemImg}>
         <img src={img ? img : itemImg} alt="item-img" />
       </div>
-      <div className="items-detail">
-        <div className="item-information">
-          <p className="item-name">{itemName}</p>
-          <span className="item-price">{formatMoney(itemPrice)} vnd</span>
+      <div className={classes.itemsDetail}>
+        <div className={classes.itemInformation}>
+          <p className={classes.itemName}>{itemName}</p>
+          <span className={classes.itemPrice}>{formatMoney(itemPrice)} vnd</span>
         </div>
         <AddButon
           label={"Thêm vào so sánh"}

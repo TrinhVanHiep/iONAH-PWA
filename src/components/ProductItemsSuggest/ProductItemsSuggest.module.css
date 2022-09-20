@@ -1,4 +1,4 @@
-.product-items-suggest {
+.productItemsSuggest {
 	box-sizing: border-box;
 	padding: 0 0 14px 0;
 	display: flex;
@@ -7,11 +7,11 @@
 	border-bottom: 1px solid #e4e4e4;
 }
 
-.product-items-suggest .break-line {
+.productItemsSuggest .breakLine {
 	display: none;
 }
 
-.product-items-suggest .item-img {
+.productItemsSuggest .itemImg {
 	max-width: 80px;
 	width: 100%;
 	display: flex;
@@ -20,22 +20,22 @@
 	margin-right: 16px;
 }
 
-.product-items-suggest .item-img img {
+.productItemsSuggest .itemImg img {
 	width: 100%;
 }
 
-.product-items-suggest .items-detail {
+.productItemsSuggest .itemsDetail {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
-.product-items-suggest .items-detail .item-information {
+.productItemsSuggest .itemsDetail .itemInformation {
 	word-wrap: break-word;
 }
 
-.product-items-suggest .items-detail .item-information .item-name {
+.productItemsSuggest .itemsDetail .itemInformation .itemName {
 	font-family: 'Roboto', sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -46,7 +46,7 @@
 	margin: 0;
 }
 
-.product-items-suggest .items-detail .item-information .item-price {
+.productItemsSuggest .itemsDetail .itemInformation .itemPrice {
 	font-family: 'Roboto', sans-serif;
 	font-style: normal;
 	font-weight: 600;
@@ -58,7 +58,7 @@
 	margin: 8px 8px 0 0;
 }
 
-.product-items-suggest .items-detail .item-information .item-old-price {
+.productItemsSuggest .itemsDetail .itemInformation .itemOldPrice {
 	font-family: 'Roboto', sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -70,7 +70,7 @@
 	margin-right: 8px;
 }
 
-.product-items-suggest .items-detail .item-information .item-sale-percent {
+.productItemsSuggest .itemsDetail .itemInformation .itemSalePercent {
 	font-family: 'Roboto', sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -81,11 +81,11 @@
 }
 
 @media (max-width: 380px) {
-	.product-items-suggest .break-line {
+	.productItemsSuggest .breakLine {
 		display: block;
 	}
 
-	.product-items-suggest .item-img {
+	.productItemsSuggest .itemImg {
 		align-items: flex-start;
 	}
 }
