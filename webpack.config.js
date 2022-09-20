@@ -27,6 +27,10 @@ const getCleanTemplate = templateFile => {
     });
 };
 
+const moduleOverridePlugin = require('./moduleOverrideWebpackPlugin');
+const componentOverrideMapping = require('./componentOverrideMapping');
+
+
 module.exports = async env => {
     /**
      * configureWebpack() returns a regular Webpack configuration object.
@@ -199,6 +203,6 @@ module.exports = async env => {
     //         maxChunks: 1
     //     })
     // );
-
+    config.plugins.push(new moduleOverridePlugin(componentOverrideMapping));
     return [config];
 };
