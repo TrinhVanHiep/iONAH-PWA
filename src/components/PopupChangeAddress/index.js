@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Button from '../Button'
-import Dropdown from '../Dropdown/Dropdown'
-import Close from "../Product_Item_Cart/Images/Svg/Clear_X"
+import Dropdown from '../Dropdown/index'
+import Close from "../ProductItemCart/Images/Svg/Clear_X"
 import "./styles.css"
 export default function Index() {
     const [value, setShow] = useState()
