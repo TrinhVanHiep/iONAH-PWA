@@ -1,4 +1,3 @@
-import "./TagType.css";
 import { useStyle } from '@magento/venia-ui/lib/classify';
 import defaultClasses from './TagType.module.css';
 

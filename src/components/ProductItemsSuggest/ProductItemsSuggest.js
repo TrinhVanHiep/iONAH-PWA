@@ -17,11 +17,11 @@ const ProductItemsSuggest = ({
 
   return (
     <div className={classes.productItemsSuggest}>
-      <div className="item-img">
+      <div className={classes.itemImg}>
         <img src={img ? img : itemImg} alt="item-img" />
       </div>
       <div className={classes.itemsDetail}>
-        <div className="item-information">
+        <div className={classes.itemInformation}>
           <span className={classes.itemName}>{itemName} </span>
           <span className={classes.itemName}>({itemCode})</span>
           <br />

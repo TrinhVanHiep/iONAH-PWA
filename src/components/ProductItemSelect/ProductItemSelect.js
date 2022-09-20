@@ -1,9 +1,9 @@
 import React from "react";
 import itemImg from "./img/tivi.png";
 import { formatMoney } from "../../common/commonFunctions";
-import AddButon from "../AddButton/AddButton";
 import defaultClasses from './ProductItemSelect.module.css';
 import { useStyle } from '@magento/venia-ui/lib/classify';
+import Button from "../Button/button";
 
 const ProductItemSelect = ({
   itemId,
@@ -24,10 +24,7 @@ const ProductItemSelect = ({
           <p className={classes.itemName}>{itemName}</p>
           <span className={classes.itemPrice}>{formatMoney(itemPrice)} vnd</span>
         </div>
-        <AddButon
-          label={"Thêm vào so sánh"}
-          onClickButton={handleAddToSearch}
-        />
+        <Button type="secondary">Thêm vào so sánh</Button>
       </div>
     </div>
   );

@@ -27,6 +27,18 @@
   justify-content: space-between;
 }
 
+.productItemsSelect .itemsDetail ._btn .btn {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #1E24C0;
+  box-sizing: border-box;
+}
+
 .productItemsSelect .itemsDetail .itemInformation .itemName {
   font-family: "Exo", sans-serif;
   font-style: normal;
