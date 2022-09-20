@@ -16,7 +16,7 @@ function Account() {
           ))}
         </div>
         <div className="account-content">
-          <Routes>
+          {/* <Routes>
             {menuList.map((element, index) => (
               <>
                 {element.listSubItem.map((item, index) => (
@@ -28,7 +28,8 @@ function Account() {
                 ))}
               </>
             ))}
-          </Routes>
+          </Routes> */}
+          this is account page
         </div>
       </div>
     </Layout>

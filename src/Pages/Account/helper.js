@@ -1,3 +1,4 @@
+import React from "react";
 // import AccountInformation from "../AccountInformation";
 import AllOrder from "../AllOrder";
 import BillingInformation from "../BillingInformation";
@@ -6,7 +7,6 @@ import GeneralNotification from "../Notifications/GeneralNotification";
 import OrderNotification from "../Notifications/OrderNotification";
 import SalesNotification from "../Notifications/SalesNotification";
 import OrderTracking from "../OrderTracking";
-import AccountInformationPage from "../../components/AccountInformationPage";
 // import WishList from "../Wishlist";
 
 export const menuList = [
@@ -18,7 +18,7 @@ export const menuList = [
         id: 1,
         name: "Thông tin tài khoản",
         url: "account-information",
-        component: <AccountInformationPage />
+        component: ""
       },
       {
         id: 2,
