@@ -11,7 +11,7 @@
       border-radius: 8px;
     }
   }
-  .wrapper__banner__category__products-content {
+  .wrapper__banner__category__products__content {
     display: flex;
     align-items: center;
     background: linear-gradient(90deg, #1E24C0 63.47%, rgba(30, 36, 192, 0) 92.57%);
@@ -19,33 +19,33 @@
     z-index: 3;
   }
   @media (max-width: 1050px) {
-    .wrapper__banner__category__products-content {
+    .wrapper__banner__category__products__content {
       width: 65%;
     }
   }
   @media (max-width: 880px) {
-    .wrapper__banner__category__products-content {
+    .wrapper__banner__category__products__content {
       width: 60%;
     }
   }
   @media (max-width: 428px) {
-    .wrapper__banner__category__products-content {
+    .wrapper__banner__category__products__content {
       border-radius: 8px;
       width: 85%;
     }
   }
   @media (max-width: 768px) {
-    .wrapper__banner__category__products-content svg {
+    .wrapper__banner__category__products__content svg {
       width: 140px;
     }
   }
   @media (max-width: 768px) {
-    .wrapper__banner__category__products-content svg {
+    .wrapper__banner__category__products__content svg {
       width: 185px;
       height: 321px;
     }
   }
-  .wrapper__banner__category__products-content p {
+  .wrapper__banner__category__products__content p {
     font-family: 'Exo';
     font-style: italic;
     font-weight: 700;
@@ -60,21 +60,21 @@
     margin-left: 38px;
   }
   @media (max-width: 1050px) {
-    .wrapper__banner__category__products-content p {
+    .wrapper__banner__category__products__content p {
       font-size: 50px;
       line-height: 70px;
       max-height: unset;
     }
   }
   @media (max-width: 768px) {
-    .wrapper__banner__category__products-content p {
+    .wrapper__banner__category__products__content p {
       font-size: 30px;
       line-height: 50px;
       max-height: unset;
     }
   }
   @media (max-width: 428px) {
-    .wrapper__banner__category__products-content p {
+    .wrapper__banner__category__products__content p {
       font-size: 24px;
       line-height: 32px;
       max-height: unset;
@@ -82,7 +82,7 @@
       max-width: 124.17px;
     }
   }
-  .wrapper__banner__category__products-img {
+  .wrapper__banner__category__products__img {
     max-width: 865px;
     max-height: 362px;
     position: absolute;
@@ -90,19 +90,19 @@
     top: 0;
   }
   @media (max-width: 768px) {
-    .wrapper__banner__category__products-img {
+    .wrapper__banner__category__products__img {
       max-height: 321px;
       border-radius: 8px;
     }
   }
-  .wrapper__banner__category__products-img img {
+  .wrapper__banner__category__products__img img {
     height: 362px;
     width: 100%;
     display: block;
     object-fit: cover;
   }
   @media (max-width: 768px) {
-    .wrapper__banner__category__products-img img {
+    .wrapper__banner__category__products__img img {
       height: 321px;
       border-radius: 8px;
     }
