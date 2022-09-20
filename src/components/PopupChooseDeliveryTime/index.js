@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import Close from "../Product_Item_Cart/Images/Svg/Clear_X"
-import Dropdown from "../Dropdown/Dropdown"
+import Close from "../ProductItemCart/Images/Svg/Clear_X"
+import Dropdown from "../Dropdown/index"
 import Button from "../Button/index"
 import "./styles.css"
 export default function Index() {
