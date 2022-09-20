@@ -112,19 +112,19 @@
   }
 }
 
-.wrapper__footer__content .wrapper__footer__top .wrap__content__text .wrapper__footer__top-support-client,
-.wrapper__footer__content .wrapper__footer__top .wrap__content__text .wrapper__footer__top-shopping-online,
-.wrapper__footer__content .wrapper__footer__top .wrap__content__text .wrapper__footer__top-account-and-community,
-.wrapper__footer__content .wrapper__footer__top .wrap__content__text .wrapper__footer__top-about-ionah {
+.wrapper__footer__content .wrapper__footer__top .wrap__content__text .wrapper__footer__top__support__client,
+.wrapper__footer__content .wrapper__footer__top .wrap__content__text .wrapper__footer__top__shopping__online,
+.wrapper__footer__content .wrapper__footer__top .wrap__content__text .wrapper__footer__top__account__and__community,
+.wrapper__footer__content .wrapper__footer__top .wrap__content__text .wrapper__footer__top__about__ionah {
   margin-right: 50px;
 }
 
 @media (max-width: 1130px) {
 
-  .wrapper__footer__content .wrapper__footer__top .wrap__content__text .wrapper__footer__top-support-client,
-  .wrapper__footer__content .wrapper__footer__top .wrap__content__text .wrapper__footer__top-shopping-online,
-  .wrapper__footer__content .wrapper__footer__top .wrap__content__text .wrapper__footer__top-account-and-community,
-  .wrapper__footer__content .wrapper__footer__top .wrap__content__text .wrapper__footer__top-about-ionah {
+  .wrapper__footer__content .wrapper__footer__top .wrap__content__text .wrapper__footer__top__support__client,
+  .wrapper__footer__content .wrapper__footer__top .wrap__content__text .wrapper__footer__top__shopping__online,
+  .wrapper__footer__content .wrapper__footer__top .wrap__content__text .wrapper__footer__top__account__and__community,
+  .wrapper__footer__content .wrapper__footer__top .wrap__content__text .wrapper__footer__top__about__ionah {
     margin-right: 20px;
   }
 }
@@ -147,30 +147,30 @@
 }
 
 @media (max-width: 1470px) {
-  .wrapper__footer__content .wrapper__footer__top-payment-methods {
+  .wrapper__footer__content .wrapper__footer__top__payment__methods {
     margin-top: 30px;
   }
 }
 
 @media (max-width: 428px) {
-  .wrapper__footer__content .wrapper__footer__top-payment-methods {
+  .wrapper__footer__content .wrapper__footer__top__payment__methods {
     margin-top: 24px;
   }
 }
 
-.wrapper__footer__content .wrapper__footer__top-payment-methods__icon {
+.wrapper__footer__content .wrapper__footer__top__payment__methods__icon {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
 @media (max-width: 1025px) {
-  .wrapper__footer__content .wrapper__footer__top-payment-methods__icon {
+  .wrapper__footer__content .wrapper__footer__top__payment__methods__icon {
     display: block;
   }
 
-  .wrapper__footer__content .wrapper__footer__top-payment-methods__icon .list_six_icon_top,
-  .wrapper__footer__content .wrapper__footer__top-payment-methods__icon .list_six_icon_bottom {
+  .wrapper__footer__content .wrapper__footer__top__payment__methods__icon .list_six_icon_top,
+  .wrapper__footer__content .wrapper__footer__top__payment__methods__icon .list_six_icon_bottom {
     display: flex;
     align-items: center;
   }
@@ -178,21 +178,21 @@
 
 @media (max-width: 1025px) and (max-width: 550px) {
 
-  .wrapper__footer__content .wrapper__footer__top-payment-methods__icon .list_six_icon_top img:last-child,
-  .wrapper__footer__content .wrapper__footer__top-payment-methods__icon .list_six_icon_bottom img:last-child {
+  .wrapper__footer__content .wrapper__footer__top__payment__methods__icon .list_six_icon_top img:last-child,
+  .wrapper__footer__content .wrapper__footer__top__payment__methods__icon .list_six_icon_bottom img:last-child {
     display: none;
   }
 }
 
 @media (max-width: 1025px) and (max-width: 410px) {
 
-  .wrapper__footer__content .wrapper__footer__top-payment-methods__icon .list_six_icon_top,
-  .wrapper__footer__content .wrapper__footer__top-payment-methods__icon .list_six_icon_bottom {
+  .wrapper__footer__content .wrapper__footer__top__payment__methods__icon .list_six_icon_top,
+  .wrapper__footer__content .wrapper__footer__top__payment__methods__icon .list_six_icon_bottom {
     flex-wrap: wrap;
   }
 }
 
-.wrapper__footer__content .wrapper__footer__top-payment-methods__icon .visa {
+.wrapper__footer__content .wrapper__footer__top__payment__methods__icon .visa {
   width: 71px;
   height: 40px;
   display: block;
@@ -200,22 +200,22 @@
 }
 
 @media (max-width: 1470px) {
-  .wrapper__footer__content .wrapper__footer__top-payment-methods__icon .visa {
+  .wrapper__footer__content .wrapper__footer__top__payment__methods__icon .visa {
     margin-left: 20px;
   }
 
-  .wrapper__footer__content .wrapper__footer__top-payment-methods__icon .visa:first-child {
+  .wrapper__footer__content .wrapper__footer__top__payment__methods__icon .visa:first-child {
     margin-left: 0;
   }
 }
 
-.wrapper__footer__content .wrapper__footer__top-payment-methods__icon .mtcard {
+.wrapper__footer__content .wrapper__footer__top__payment__methods__icon .mtcard {
   width: 56px;
   height: 44px;
   display: block;
 }
 
-.wrapper__footer__content .wrapper__footer__top-payment-methods__icon .atm {
+.wrapper__footer__content .wrapper__footer__top__payment__methods__icon .atm {
   height: 48.75px;
   width: 48.75px;
   display: block;
@@ -223,24 +223,24 @@
 }
 
 @media (max-width: 330px) {
-  .wrapper__footer__content .wrapper__footer__top-payment-methods__icon .atm {
+  .wrapper__footer__content .wrapper__footer__top__payment__methods__icon .atm {
     margin-left: 20px;
   }
 }
 
-.wrapper__footer__content .wrapper__footer__top-payment-methods__icon .vnpay {
+.wrapper__footer__content .wrapper__footer__top__payment__methods__icon .vnpay {
   width: 62px;
   height: 62px;
   display: block;
 }
 
 @media (max-width: 1470px) {
-  .wrapper__footer__content .wrapper__footer__top-payment-methods__icon .vnpay {
+  .wrapper__footer__content .wrapper__footer__top__payment__methods__icon .vnpay {
     margin-left: 20px;
   }
 }
 
-.wrapper__footer__content .wrapper__footer__top-payment-methods__icon .momo {
+.wrapper__footer__content .wrapper__footer__top__payment__methods__icon .momo {
   width: 46px;
   height: 46px;
   display: block;
@@ -249,57 +249,57 @@
 }
 
 @media (max-width: 410px) {
-  .wrapper__footer__content .wrapper__footer__top-payment-methods__icon .momo {
+  .wrapper__footer__content .wrapper__footer__top__payment__methods__icon .momo {
     margin-left: 0;
   }
 }
 
 @media (max-width: 1470px) {
-  .wrapper__footer__content .wrapper__footer__top-connect-with-me {
+  .wrapper__footer__content .wrapper__footer__top__connect__with__me {
     margin-top: 30px;
   }
 }
 
-.wrapper__footer__content .wrapper__footer__top-connect-with-me .wrapper__icon-connect-with-me {
+.wrapper__footer__content .wrapper__footer__top__connect__with__me .wrapper__icon__connect__with__me {
   display: flex;
   align-items: center;
 }
 
-.wrapper__footer__content .wrapper__footer__top-connect-with-me .wrapper__icon-connect-with-me a {
+.wrapper__footer__content .wrapper__footer__top__connect__with__me .wrapper__icon__connect__with__me a {
   padding-bottom: 0;
 }
 
-.wrapper__footer__content .wrapper__footer__top-connect-with-me .wrapper__icon-connect-with-me a:first-child {
+.wrapper__footer__content .wrapper__footer__top__connect__with__me .wrapper__icon__connect__with__me a:first-child {
   margin-left: 11px;
 }
 
-.wrapper__footer__content .wrapper__footer__top-connect-with-me .wrapper__icon-connect-with-me a:first-child img {
+.wrapper__footer__content .wrapper__footer__top__connect__with__me .wrapper__icon__connect__with__me a:first-child img {
   height: 50px;
   width: 50px;
   display: block;
 }
 
-.wrapper__footer__content .wrapper__footer__top-connect-with-me .wrapper__icon-connect-with-me #youtube {
+.wrapper__footer__content .wrapper__footer__top__connect__with__me .wrapper__icon__connect__with__me #youtube {
   margin-left: 29px;
 }
 
-.wrapper__footer__content .wrapper__footer__top-connect-with-me .wrapper__icon-connect-with-me #youtube img {
+.wrapper__footer__content .wrapper__footer__top__connect__with__me .wrapper__icon__connect__with__me #youtube img {
   height: 41px;
   width: 59px;
   display: block;
 }
 
-.wrapper__footer__content .wrapper__footer__top-connect-with-me .wrapper__icon-connect-with-me #zalo {
+.wrapper__footer__content .wrapper__footer__top__connect__with__me .wrapper__icon__connect__with__me #zalo {
   display: none;
 }
 
 @media (max-width: 428px) {
-  .wrapper__footer__content .wrapper__footer__top-connect-with-me .wrapper__icon-connect-with-me #zalo {
+  .wrapper__footer__content .wrapper__footer__top__connect__with__me .wrapper__icon__connect__with__me #zalo {
     display: block;
     margin-left: 27px;
   }
 
-  .wrapper__footer__content .wrapper__footer__top-connect-with-me .wrapper__icon-connect-with-me #zalo img {
+  .wrapper__footer__content .wrapper__footer__top__connect__with__me .wrapper__icon__connect__with__me #zalo img {
     width: 55px;
     height: 52px;
   }

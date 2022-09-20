@@ -1,25 +1,27 @@
 import React, { useState } from 'react'
-import "./styles.css"
 import Polygon from "./Images/Polygon 1"
+import defaultClasses from './Dropdown.module.css';
+import { useStyle } from '@magento/venia-ui/lib/classify';
 export default function Dropdown({ label, data, setValueChosen, height, width, value,backgourd }) {
     const [show, setShow] = useState(false)
     const HandleChange = (el) => {
         setValueChosen(el.value)
         setShow(false)
     }
+    const classes = useStyle(defaultClasses);
     return (
-        <div className='wrapper__dropdown'>
+        <div className={classes.wrapper__dropdown}>
             {/* {
                 label !== null || label !== undefined && <label >Choose </label>
             } */}
 
-            <div className='dropdown__inner'>
-                <div className='dropdown__inner__wrap' style={{ height: height, width: width,backgroundColor:backgourd }}>
+            <div className={classes.dropdown__inner}>
+                <div className={classes.dropdown__inner__wrap} style={{ height: height, width: width,backgroundColor:backgourd }}>
                     <div onClick={(e) => setShow(true)}>
                         {value !== undefined ? value : label}
                         <i><Polygon /></i>
                     </div>
-                    {show === true && <div className='list__data__dropdown'>
+                    {show === true && <div className={classes.list__data__dropdown}>
                         {
                             data.map((el, index) =>
                                 <p key={index} onClick={(e) => HandleChange(el)}>{el.value}</p>

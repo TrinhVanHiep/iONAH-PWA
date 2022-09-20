@@ -5,6 +5,7 @@ import ProductItemSelect from "../ProductItemSelect/ProductItemSelect"
 import ProductItemsRecentlyView from "../ProductItemsRecentlyView/ProductItemsRecentlyView"
 import ProductItemsSuggest from "../ProductItemsSuggest/ProductItemsSuggest";
 import SelectSaleType from "../SelectSaleType/SelectSaleType"
+import Footer from "../Footer"
 const hi = {
   textAlign: "center",
   margin: "1rem",
@@ -21,6 +22,8 @@ const HomePage = () => {
       <h1 style={hi}>Hello, {who}!</h1>
       <h1 style={wave}>{"\uD83D\uDC4B"}</h1>
       <PopupChangeAddress />
+      <PopupChangeAddress/>
+      <Footer/>
     </div>
   );
 };
