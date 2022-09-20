@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../../components/Layout";
 import "./About.css";
-import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 import Discount from "./image/chiet_khau.svg";
 import Vision from "./image/tam_nhin.jpg";

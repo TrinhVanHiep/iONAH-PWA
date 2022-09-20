@@ -1,8 +1,12 @@
-import React from 'react'
-
+import React, { Fragment } from 'react'
+import FilterBar from '../../components/FilterBar';
+import OrderItem from '../../components/OrderItem';
 function AllOrder() {
   return (
-    <div>AllOrder</div>
+    <Fragment>
+      <FilterBar/>
+      <OrderItem/>
+    </Fragment>
   )
 }
 
