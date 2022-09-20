@@ -1,0 +1,196 @@
+.order-detail {
+    max-width: 1540px;
+    /* background: #FAFAFA; */
+    padding-bottom: 50px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+.order-detail--title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: 0.04em;
+    color: #282828;
+    padding: 80px 0 40px;
+}
+.order-detail--input {
+    font-weight: 600;
+    font-size: 20px;
+    background: #f6fff9;
+    border: 2px solid #166b29;
+    border-radius: 8px;
+    padding: 20px 40px;
+    margin-bottom: 16px;
+}
+.order-detail--input span {
+    color: #282828;
+}
+.order-detail--input .order-detail--input__text {
+    color: #24b065;
+}
+.order-detail--single {
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding: 20px 0;
+}
+.order-detail--single .single-content {
+    margin: 0 40px;
+    padding-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px 0;
+    border-bottom: 1px solid #c4c4c4;
+}
+.order-detail--single .single-title {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #282828;
+}
+.order-detail--single .single-number {
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #1e24c0;
+}
+.order-detail--single .single-watch {
+    font-weight: 400;
+    font-size: 14px;
+    font-style: italic;
+    color: #818181;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+.order-detail--single .single-time {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    color: #282828;
+    background: #fff;
+    padding-top: 16px;
+}
+.order-detail--evaluate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px 0;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.order-detail--evaluate .evaluate-text {
+    font-weight: 400;
+    font-size: 16px;
+    color: #282828;
+    margin-bottom: 23px;
+}
+.order-detail--evaluate .evaluate-select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 75px;
+}
+.order-detail--evaluate .evaluate-select--vote {
+    text-align: center;
+}
+.order-detail--evaluate .evaluate-select--vote__img {
+    width: 67px;
+    height: 67px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.order-detail--evaluate .evaluate-select--vote__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.order-detail--evaluate .evaluate-select--vote__text {
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+}
+.order-detail--evaluate .evaluate-select--vote .text-satisfied {
+    color: #64c77a;
+}
+.order-detail--evaluate .evaluate-select--vote .text-notsatisfied {
+    color: #404040;
+}
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .order-detail {
+        padding: 0;
+    }
+}
+@media screen and (min-width: 1023.98px) and (max-width: 1440px) {
+    .order-detail {
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 1023.98px) {
+    .order-detail {
+        background-color: #F5F5F5;
+        padding: 20px 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .order-detail--title {
+        font-size: 40px;
+        letter-spacing: 0;
+        text-align: left;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 46px;
+        padding: 0 0 15px;
+    }
+    .order-detail--single {
+        padding: 20px 40px;
+    }
+    .order-detail--input {
+        font-size: 16px;
+        padding: 20px 40px;
+    }
+    .order-detail--evaluate {
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 375px) {
+    .order-detail--title {
+        font-size: 25px;
+        letter-spacing: 0;
+        padding: 30px 0 15px;
+    }
+    .order-detail--input {
+        font-size: 12px;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    .order-detail-single .single-time {
+        font-size: 12px;
+    }
+    .order-detail--evaluate .evaluate-text {
+        font-size: 12px;
+    }
+    .order-detail--evaluate .evaluate-select {
+        gap: 0 40px;
+    }
+    .order-detail--evaluate .evaluate-select--vote span {
+        font-size: 12px;
+    }
+    .order-detail--evaluate .evaluate-select--vote__img {
+        width: 40px;
+        height: 40px;
+    }
+    .order-detail--evaluate .evaluate-select--vote__img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
