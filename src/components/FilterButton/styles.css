@@ -1,0 +1,45 @@
+._filter-button .btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 24px;
+  cursor: pointer;
+  text-align: center;
+  min-width: 108px;
+  transition: opacity 0.2s ease;
+  user-select: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #000;
+  border: 1px solid transparent;
+}
+._filter-button .btn-primary {
+  background-color: #ececec;
+}
+._filter-button .btn-primary:hover {
+  border: 1px solid #c4c4c4;
+  background-color: #f7f7f7;
+}
+._filter-button .btn-primary:active {
+  border: 1px solid #1e24c0;
+  background-color: #f7f7f7;
+  color: #1e24c0;
+}
+._filter-button .btn-secondary {
+  background-color: #fff;
+}
+._filter-button .btn-secondary:hover {
+  border: 1px solid #c4c4c4;
+  background-color: #f7f7f7;
+}
+._filter-button .btn--disabled {
+  opacity: 0.5 !important;
+  pointer-events: none;
+}

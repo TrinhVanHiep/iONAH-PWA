@@ -1,0 +1,15 @@
+._input input {
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    background-color: #f6f6f6;
+    padding: 16.5px 16px;
+    outline: none;
+    border-radius: 8px;
+}
+._input input, ._input input::placeholder {
+    color: #707070;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Roboto";
+}
