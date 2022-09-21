@@ -1,6 +1,6 @@
 import React from "react";
 import defaultClasses from './SelectSaleType.module.css';
-import itemImg from "./img/momo.png";
+import itemImg from "../../asset/img/SelectSaleType/momo.png";
 import { IconInformation } from "../../asset/Icons/Icon";
 import TagType from "../TagType/TagType";
 import Button from "../Button";

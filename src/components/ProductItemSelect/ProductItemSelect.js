@@ -1,5 +1,5 @@
 import React from "react";
-import itemImg from "./img/tivi.png";
+import itemImg from "../../asset/img/ProductItemSelectSearch/tivi.png";
 import { formatMoney } from "../../common/commonFunctions";
 import defaultClasses from './ProductItemSelect.module.css';
 import { useStyle } from '@magento/venia-ui/lib/classify';
