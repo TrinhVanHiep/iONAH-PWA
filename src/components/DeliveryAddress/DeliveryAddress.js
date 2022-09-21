@@ -30,7 +30,7 @@ function DeliveryAddress() {
     <div className="delivery-address">
         <div className="delivery-address_top">
         <h3>Địa chỉ giao hàng</h3>
-        <Button type="secondary">+ Thêm địa chỉ</Button>
+        <Button btnType="secondary">+ Thêm địa chỉ</Button>
         </div>
         <div className="delivery-address_content">
         {data.map((el,index) => (

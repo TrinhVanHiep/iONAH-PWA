@@ -50,12 +50,12 @@ function AddPaymentPopup() {
                 </div>
                 <div className={classes.addPaymentBtn}>
                     <div className={classes.btnWrapper}>
-                        <Button type="secondary" className={classes.btnBack}>
+                        <Button btnType="secondary" className={classes.btnBack}>
                             Trở lại
                         </Button>
                     </div>
                     <div className={classes.btnWrapper}>
-                        <Button type="primary" className={classes.btnBack}>
+                        <Button btnType="primary" className={classes.btnBack}>
                             Xác nhận
                         </Button>
                     </div>

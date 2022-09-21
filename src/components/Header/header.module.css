@@ -7,6 +7,9 @@
     width: 100%;
     top: 0;
 }
+.header .headerRe{
+    position: relative;
+}
 .header .headerPos .headerForm {
     height: 72px;
     background: linear-gradient(241.13deg, #01e3a1 16.15%, #01b3a4 84.21%);
@@ -17,7 +20,7 @@
    }
 }
 .header .headerPos .headerForm .headerTop {
-    height: 57px;
+    /* height: 57px; */
     border-bottom: 1px solid rgba(255, 255, 255, 0.24);
     display: flex;
     align-items: center;
@@ -1129,4 +1132,9 @@ li{
         padding-right: 13px;
         border-right: 1px solid #D9D9D9;
     }
+}
+.visibleHidden{
+    visibility: hidden;
+    max-height: 0;
+    
 }

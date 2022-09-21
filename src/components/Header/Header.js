@@ -10,6 +10,7 @@ import { useWindowSize } from "@magento/peregrine";
 import imageProduct from "../../asset/img/product-mn.png"
 import defaultClasses from "./header.module.css";
 import { useStyle } from "@magento/venia-ui/lib/classify";
+import AccountTrigger from "@magento/venia-ui/lib/components/Header/accountTrigger";
 
 const Header = (props) => {
     const classes = useStyle(defaultClasses, props.classes);
@@ -51,10 +52,10 @@ const Header = (props) => {
     return (
         <div className={classes.header} ref={header} onMouseLeave={() => handleNotHoverItem()}>
             {windowSizes.innerWidth > 800 ? (
-                <div className={scrollTop > 57 ? classes.headerPos : ""}>
+                <div className={scrollTop > 57 ? classes.headerPos : classes.headerRe}>
                     <div className={classes.headerForm}>
-                        {scrollTop < 57 ? (
-                            <div className={classes.headerTop}>
+                        {/* {scrollTop < 57 ? ( */}
+                            <div className={scrollTop < 57 ?classes.headerTop: classes.visibleHidden}>
                                 <button className={classes.textIonah}>Về Ionah</button>
                                 <button className={classes.textDT}>Trở Thành Đối Tác Cùng Ionah</button>
                                 <div className={classes.formUser}>
@@ -63,6 +64,7 @@ const Header = (props) => {
                                     </div>
                                     <div className={classes.welcom}>
                                         <p className={classes.textWelcom}>Welcome</p>
+                                        <AccountTrigger />  
                                         <p className={classes.signinRegister} > <span onClick={() => props.openModal("signIn")} >Sign in</span> / <span onClick={() => props.openModal("signUp")} >Register</span></p>
                                     </div>
                                 </div>
@@ -72,9 +74,6 @@ const Header = (props) => {
                                     <button className={classes.buttonVn}>{" "}VN</button>
                                 </div>
                             </div>
-                        ) : (
-                            null
-                        )}
                         <div className={classes.headerBottom}>
                             <div className={classes.logo}>
                                 <img className={classes.logos} src={logo}></img>
