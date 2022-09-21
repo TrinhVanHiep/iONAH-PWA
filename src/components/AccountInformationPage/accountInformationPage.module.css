@@ -102,7 +102,26 @@
   color: #1E24C0;
   max-width: 240px;
   width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
 }
+
+.accountDetails {
+  width: 70%;
+}
+
+.accountDetails .title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: capitalize;
+  color: #282828;
+  margin-bottom: 16px;
+}
+
+
 
 /* .editInformationButton {
     composes: root_normalPriority from '../Button/button.module.css';

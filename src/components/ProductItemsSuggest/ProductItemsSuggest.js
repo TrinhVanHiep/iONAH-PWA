@@ -1,6 +1,6 @@
 import React from "react";
 import defaultClasses from './ProductItemsSuggest.module.css';
-import itemImg from "./img/wash-machine.png";
+import itemImg from "../../asset/img/ProductItemsSuggest/wash-machine.png";
 import { formatMoney } from "../../common/commonFunctions";
 import { useStyle } from '@magento/venia-ui/lib/classify';
 

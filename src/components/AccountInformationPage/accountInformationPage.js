@@ -6,7 +6,7 @@ import Button from '../Button/button';
 import { Message } from '@magento/venia-ui/lib/components/Field';
 import defaultClasses from './accountInformationPage.module.css';
 import AccountInformationPageOperations from './accountInformationPage.gql.js';
-import avatar from "./img/avatar.png"
+import avatar from "../../asset/img/AccountInformation/avatar.png";
 
 const AccountInformationPage = props => {
   const classes = useStyle(defaultClasses, props.classes);
@@ -60,12 +60,14 @@ const AccountInformationPage = props => {
           <p className={classes.selectImage}>Anh dai dien</p>
           <Button className={classes.btnSelectImage} type='secondary'>Them Anh</Button>
         </div>
+
         <div className={classes.accountDetails}>
+          <h3 className={classes.title}>Thông tin cá nhân</h3>
           <div className={classes.lineItemsContainer}>
             <span className={classes.nameLabel}>
               <FormattedMessage
                 id={'global.name'}
-                defaultMessage={'Name'}
+                defaultMessage={'Tên'}
               />
             </span>
             <span className={classes.nameValue}>
@@ -74,7 +76,7 @@ const AccountInformationPage = props => {
             <span className={classes.emailLabel}>
               <FormattedMessage
                 id={'global.email'}
-                defaultMessage={'Email'}
+                defaultMessage={'Giới tính'}
               />
             </span>
             <span className={classes.emailValue}>

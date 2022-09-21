@@ -1,6 +1,6 @@
 import React from "react";
 import defaultClasses from './ProductItemsRecentlyView.module.css';
-import itemImg from "./img/tivi.png";
+import itemImg from "../../asset/img/ProductItemsRecentlyView/tivi.png";
 import { IconRateStar } from "../../asset/Icons/Icon";
 import AddButon from "../AddButton/AddButton";
 import { formatMoney } from "../../common/commonFunctions";
