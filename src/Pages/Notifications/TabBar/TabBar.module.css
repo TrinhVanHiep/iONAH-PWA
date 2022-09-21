@@ -43,7 +43,7 @@
     text-transform: capitalize;
     color: #1e24c0;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .layoutNoTifMenu {
         box-sizing: border-box;
         align-items: baseline;
