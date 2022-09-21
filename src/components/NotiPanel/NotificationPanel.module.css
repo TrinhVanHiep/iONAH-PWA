@@ -25,10 +25,12 @@
     /* justify-content: flex-end; */
 }
 .readedBtn {
+    cursor: pointer;
     text-decoration: underline;
     color: blue;
 }
 .deleteBtn {
+    cursor: pointer;
     text-decoration: underline;
     color: red;
     margin-left: 12px;

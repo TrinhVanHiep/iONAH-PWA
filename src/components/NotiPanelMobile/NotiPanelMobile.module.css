@@ -32,9 +32,11 @@
     justify-content: space-between;
 }
 .readedBtn {
+    cursor: pointer;
     color: blue;
 }
 .deleteBtn {
+    cursor: pointer;
     color: red;
     /* margin-left: 12px; */
 }
