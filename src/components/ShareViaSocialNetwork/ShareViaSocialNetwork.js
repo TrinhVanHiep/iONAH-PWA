@@ -3,8 +3,8 @@ import "./ShareViaSocialNetwork.css";
 import Facebook from "./image/facebook.png";
 import Link from "./image/link.png";
 import Mgs from "./image/messenger.png";
-// import Button from '../Button';
-import Close from "../../image/close.svg";
+import Button from "../Button";
+import Close from "../../asset/img/close.svg";
 function ShareViaSocialNetwork({onClose, showPopup}) {
     const [show, setShow] = useState(true);
 
@@ -39,8 +39,8 @@ function ShareViaSocialNetwork({onClose, showPopup}) {
             </a>
         </div>
         <div className="share-btn">
-            {/* <Button type = 'secondary'>Trở lại</Button>
-            <Button>Chia sẻ</Button> */}
+            <Button type = 'secondary'>Trở lại</Button>
+            <Button>Chia sẻ</Button>
         </div>
         <img src={Close} alt="close" className='close-icon' onClick = {closeHandler}/>
     </div>

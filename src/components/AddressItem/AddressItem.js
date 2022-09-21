@@ -1,5 +1,5 @@
 import React from 'react'
-import Edit from "../../image/icons_edit.svg";
+import Edit from "../../asset/img/icons_edit.svg";
 import "./AddressItem.css";
 function AddressItem({index,handleChange,item,dataChoose,showEditIcon=true}) {
   return (

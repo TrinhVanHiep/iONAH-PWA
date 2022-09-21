@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import "./styles.scss";
-import star from "../../image/Star.png";
-import heartCard from "../../image/heart_card.png"
-import bank from "../../image/bank.png";
-import compare from "../../image/Compare.png";
+// import star from "../../image/Star.png";
+import star from "../../asset/img/Star.png";
+// import heartCard from "../../image/heart_card.png"
+import heartCard from "../../asset/img/heart_card.png"
+import bank from "../../asset/img/bank.png";
+// import compare from "../../image/Compare.png";
+import compare from "../../asset/img/Compare.png";
 import Button from '../Button';
 import layers from "../../asset/img/layers.png"
 import iconStock from "../../asset/img/radix-icons_value-none.png";
