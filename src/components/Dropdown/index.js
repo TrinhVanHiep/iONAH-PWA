@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Polygon from "./Images/Polygon 1"
 import defaultClasses from './Dropdown.module.css';
 import { useStyle } from '@magento/venia-ui/lib/classify';
-export default function Dropdown({ label, data, setValueChosen, height, width, value,backgourd }) {
+export default function Dropdown({ label, data, setValueChosen,value,newClassName }) {
     const [show, setShow] = useState(false)
     const HandleChange = (el) => {
         setValueChosen(el.value)
@@ -16,7 +16,7 @@ export default function Dropdown({ label, data, setValueChosen, height, width, v
             } */}
 
             <div className={classes.dropdown__inner}>
-                <div className={classes.dropdown__inner__wrap} style={{ height: height, width: width,backgroundColor:backgourd }}>
+                <div className={`${classes.dropdown__inner__wrap} ${newClassName}`} >
                     <div onClick={(e) => setShow(true)}>
                         {value !== undefined ? value : label}
                         <i><Polygon /></i>

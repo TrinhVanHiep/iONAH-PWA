@@ -1,0 +1,533 @@
+.wrapper__popup__change__address {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.dropdown__add__new__address {
+  width: 143px;
+  height: 32px;
+  background: #F7F7F7;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@media (max-width:580px) {
+  .dropdown__add__new__address {
+    width: 120px
+  }
+}
+
+@media (max-width:500px) {
+  .dropdown__add__new__address {
+    width: 92px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+@media (max-width:410px) {
+  .dropdown__add__new__address {
+    width: 85px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+@media (max-width:500px) {
+  .dropdown__add__new__address i svg {
+    height: 4px;
+    width: 8px;
+  }
+}
+
+.wrapper__popup__change__address .Popup__background {
+  height: 100%;
+  width: 100%;
+  background-color: gray;
+  opacity: 0.5;
+}
+
+.wrapper__popup__change__address__content__all {
+  background: #FFFFFF;
+  border-radius: 8px;
+  width: 668px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 0 32px;
+}
+
+@media (max-width: 768px) {
+  .wrapper__popup__change__address__content__all {
+    max-width: 92vw;
+  }
+}
+@media (max-width: 390px) {
+  .wrapper__popup__change__address__content__all {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 360px) {
+  .wrapper__popup__change__address__content__all {
+    padding: 0 10px;
+  }
+}
+.wrapper__popup__change__address__content__all>div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 29.5px;
+}
+
+.wrapper__popup__change__address__content__all>div:first-child h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: capitalize;
+  /* Black */
+  color: #282828;
+}
+
+@media (max-width: 400px) {
+  .wrapper__popup__change__address__content__all>div:first-child h1 {
+    font-size: 16px;
+  }
+}
+
+.wrapper__popup__change__address__content__all>div:first-child i {
+  cursor: pointer;
+}
+
+/* @media (max-width: 620px) {
+    .wrapper__popup__change__address__content {
+      height: 240px;
+    }
+  }
+  @media (max-width: 480px) {
+    .wrapper__popup__change__address__content {
+      height: unset;
+    }
+  } */
+.wrapper__popup__change__address__content__inner {
+  margin-top: 29.5px;
+}
+
+@media (max-width:680px) {
+  .wrapper__popup__change__address__content__inner .wrapper__all__content {
+    max-width: 385px;
+  }
+}
+
+.wrapper__popup__change__address__content__inner input {
+  height: 27px;
+  width: 27px;
+  border: 2px solid #C4C4C4;
+}
+
+.wrapper__popup__change__address__content__inner .content__top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+@media (max-width:740px) {
+  .wrapper__popup__change__address__content__inner .content__top {
+    display: block
+  }
+}
+
+.wrapper__popup__change__address__content__inner .content__top b {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  /* or 112% */
+
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+
+  color: #707070;
+  display: block;
+  margin-right: 20px;
+}
+
+@media (max-width:740px) {
+  .wrapper__popup__change__address__content__inner .content__top b {
+    padding-bottom: 16px;
+  }
+}
+
+@media (max-width:500px) {
+  .wrapper__popup__change__address__content__inner .content__top b {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.wrapper__popup__change__address__content__inner .content__top div {
+  flex: 1;
+}
+.wrapper__popup__change__address__content__inner .inputAddNewAddress {
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  background: #F7F7F7;
+}
+@media (max-width:500px) {
+  .wrapper__popup__change__address__content__inner .inputAddNewAddress  {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+.wrapper__popup__change__address__content__inner .content__mid {
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+  margin-top: 16px;
+}
+
+@media (max-width:740px) {
+  .wrapper__popup__change__address__content__inner .content__mid {
+    display: block
+  }
+
+}
+
+.wrapper__popup__change__address__content__inner .content__mid b {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  /* or 112% */
+
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+
+  color: #707070;
+  display: block;
+  margin-right: 20px;
+}
+
+@media (max-width:500px) {
+  .wrapper__popup__change__address__content__inner .content__mid b {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.wrapper__popup__change__address__content__inner .content__mid>div {
+  width: 100%;
+  flex: 1
+}
+
+@media (max-width:740px) {
+  .wrapper__popup__change__address__content__inner .content__mid>div {
+    margin-top: 16px;
+  }
+}
+
+.wrapper__popup__change__address__content__inner .content__mid>div>div:nth-child(1) {
+  flex: 1;
+}
+
+.wrapper__popup__change__address__content__inner .content__mid .wrapper__list__dropdown {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+@media (max-width:340px) {
+  .wrapper__popup__change__address__content__inner .content__mid .wrapper__list__dropdown  {
+   gap: 7px;
+  }
+}
+.wrapper__popup__change__address__content__inner .content__bottom>div {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+@media (max-width:660px) {
+  .wrapper__popup__change__address__content__inner .content__bottom>div:nth-child(2) {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 16px;
+  }
+}
+
+.wrapper__popup__change__address__content__inner .content__bottom b {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  /* or 112% */
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+
+  color: #707070;
+  display: block;
+  margin-right: 38px;
+}
+
+@media (max-width:500px) {
+  .wrapper__popup__change__address__content__inner .content__bottom b {
+    padding-bottom: 16px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.wrapper__popup__change__address__content__inner .content__bottom>div:first-child {
+  width: 100%;
+  flex: 1;
+}
+
+@media (max-width:500px) {
+  .wrapper__popup__change__address__content__inner .content__bottom>div:first-child {
+    display: block
+  }
+}
+
+.wrapper__popup__change__address__content__inner .content__bottom>div:first-child>div {
+  width: 100%;
+  flex: 1;
+}
+
+.wrapper__popup__change__address__content__inner .content__bottom .list__radio>div {
+  display: flex;
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+
+}
+
+.wrapper__popup__change__address__content__inner .content__bottom .list__radio b {
+  margin-right: 47px;
+
+}
+
+@media (max-width:500px) {
+  .wrapper__popup__change__address__content__inner .content__bottom .list__radio b {
+    padding-bottom: 0;
+
+  }
+}
+
+.wrapper__popup__change__address__content__inner .content__bottom .list__radio span {
+  display: block;
+  margin-left: 19px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height, or 112% */
+
+  letter-spacing: 0.01em;
+
+  color: #707070;
+
+
+}
+
+@media (max-width:500px) {
+  .wrapper__popup__change__address__content__inner .content__bottom .list__radio span {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.wrapper__popup__change__address .add__new__address {
+  display: flex;
+  justify-content: center;
+
+}
+
+.wrapper__popup__change__address .add__new__address button {
+  margin-top: 16px;
+
+}
+
+.wrapper__popup__change__address .add__new__address span {
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #1E24C0;
+  margin: 0 2px;
+}
+
+.wrapper__popup__change__address__content__inner .content__bottom>div:last-child span {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+
+  color: #282828;
+  display: block;
+  margin-left: 16px;
+}
+
+@media (max-width:500px) {
+  .wrapper__popup__change__address__content__inner .content__bottom>div:last-child span {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.wrapper__popup__change__address__content__button {
+  display: flex;
+  margin-top: 24px;
+  gap: 20px;
+  padding-bottom: 48px;
+}
+
+@media (max-width: 768px) {
+  .wrapper__popup__change__address__content__button {
+    justify-content: center;
+  }
+}
+
+/* @media (max-width: 480px) {
+    .wrapper__popup__change__address__content__button {
+      padding-bottom: 20px;
+    }
+  } */
+.wrapper__popup__change__address__content__button .button__popup__change__address {
+  width: 292px;
+  height: 48px;
+  padding: 0;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .wrapper__popup__change__address__content__button .button__popup__change__address {
+    width: 200px;
+    min-width: unset;
+  }
+}
+
+@media (max-width: 620px) {
+  .wrapper__popup__change__address__content__button .button__popup__change__address {
+    width: 150px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .wrapper__popup__chosen__delivery__time__content__button .button__popup__chosen__delivery__time {
+    width: 147px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 360px) {
+  .wrapper__popup__chosen__delivery__time__content__button .button__popup__chosen__delivery__time {
+    width: 100px;
+    height: 40px;
+    font-size: 13px;
+  }
+}
+
+/* @media (max-width: 480px) {
+    .wrapper__popup__change__address__content__inner> div {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  @media (max-width: 768px) {
+    .wrapper__popup__chosen__delivery__time__content__inner> div .wrap__all__inner.wrap__hour .dropdown__inner__wrap {
+      width: 300px !important;
+    }
+  }
+  @media (max-width: 410px) {
+    .wrapper__popup__chosen__delivery__time__content__inner> div .wrap__all__dropdown .wrap__hour .dropdown__inner__wrap {
+      width: 100% !important;
+    }
+  } */
+/* .wrapper__popup__chosen__delivery__time__content__dropdown .wrap__date__month {
+    display: flex;
+    margin-top: 12px;
+    gap: 16px;
+  }
+  @media (max-width: 400px) {
+    .wrapper__popup__chosen__delivery__time__content__dropdown .wrap__date__month {
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+  @media (max-width: 768px) {
+    .wrapper__popup__chosen__delivery__time__content__dropdown .wrap__date__month .dropdown__inner__wrap {
+      width: 142px !important;
+    }
+  }
+  @media (max-width: 400px) {
+    .wrapper__popup__chosen__delivery__time__content__dropdown .wrap__date__month .dropdown__inner__wrap {
+      width: 100% !important;
+    }
+  }
+  .wrapper__popup__chosen__delivery__time__content__button {
+    display: flex;
+    margin-top: 24px;
+    gap: 20px;
+  }
+  @media (max-width: 768px) {
+    .wrapper__popup__chosen__delivery__time__content__button {
+      justify-content: center;
+    }
+  }
+  @media (max-width: 480px) {
+    .wrapper__popup__chosen__delivery__time__content__button {
+      padding-bottom: 20px;
+    }
+  }
+  .wrapper__popup__chosen__delivery__time__content__button .button__popup__chosen__delivery__time {
+    width: 292px;
+    height: 48px;
+    padding: 0;
+  }
+  @media (max-width: 768px) {
+    .wrapper__popup__chosen__delivery__time__content__button .button__popup__chosen__delivery__time {
+      width: 200px;
+      min-width: unset;
+    }
+  }
+  @media (max-width: 620px) {
+    .wrapper__popup__chosen__delivery__time__content__button .button__popup__chosen__delivery__time {
+      width: 150px;
+      height: 40px;
+    }
+  }
+  @media (max-width: 420px) {
+    .wrapper__popup__chosen__delivery__time__content__button .button__popup__chosen__delivery__time {
+      width: 120px;
+      height: 40px;
+    }
+  }
+  @media (max-width: 360px) {
+    .wrapper__popup__chosen__delivery__time__content__button .button__popup__chosen__delivery__time {
+      width: 100px;
+      height: 40px;
+      font-size: 13px;
+    }
+  }
+   */
