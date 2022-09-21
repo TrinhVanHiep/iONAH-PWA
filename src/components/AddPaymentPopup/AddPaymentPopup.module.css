@@ -1,0 +1,146 @@
+.addPaymentContainer {
+    width: 100vw;
+    height: 100vh;
+    /* background: #c1c1c1; */
+    /* opacity: 0.2; */
+    position: relative;
+}
+.addPaymentBackgrd {
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    opacity: 0.5;
+}
+.addPaymentWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1020px;
+    /* max-height: 622px; */
+    padding: 71px 100px;
+    background: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+}
+
+.addPaymentTitle {
+    text-align: center;
+    color: #282828;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 46px;
+}
+.addPaymentContent {
+    margin-top: 47.87px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+    margin-bottom: 37.3px;
+}
+.addPaymentLeftContent {
+    width: 43.66%;
+}
+.addPaymentRightContent {
+    margin-top: 32.4px;
+    width: auto;
+}
+.addPaymentInput {
+    border-radius: 8px;
+    padding: 8px, 12px, 8px, 12px;
+    background: #f6f6f6;
+    height: 32px;
+    margin-bottom: 19px;
+}
+.addPaymentInputTitle {
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.75px;
+}
+.btnBack {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.02;
+    /* text-align: center; */
+    border-radius: 8px;
+    padding: 14.5px;
+    width: 270px;
+    /* height: 48px; */
+}
+.addPaymentBtn {
+    display: flex;
+    justify-content: flex-end;
+}
+.btnWrapper {
+    margin-left: 20px;
+}
+@media (max-width: 1024px) {
+    .addPaymentWrapper {
+        width: 768px;
+    }
+    .addPaymentLeftContent {
+        width: 100%;
+    }
+    .addPaymentRightContent {
+        margin-top: 0px;
+        width: 100%;
+    }
+    img {
+        margin: 0 auto;
+    }
+}
+@media (max-width: 768px) {
+    .addPaymentWrapper {
+        width: 512px;
+        padding: 36px 24px 16px 24px;
+    }
+    .addPaymentTitle {
+        font-size: 24px;
+    }
+    .addPaymentInputTitle {
+        font-size: 18px;
+    }
+    .addPaymentBtn {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btnWrapper {
+        margin-left: 0;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .btnBack {
+        width: 100%;
+    }
+}
+@media (max-width: 513px) {
+    .addPaymentWrapper {
+        width: 378px;
+        padding: 36px 20px 16px 20px;
+    }
+    .addPaymentTitle {
+        font-size: 19px;
+    }
+    .addPaymentInputTitle {
+        font-size: 16px;
+    }
+    .addPaymentLeftContent {
+        max-width: 330px;
+        margin: 0 auto;
+    }
+    .addPaymentBtn {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btnWrapper {
+        margin-left: 0;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .btnBack {
+        width: 100%;
+    }
+}
