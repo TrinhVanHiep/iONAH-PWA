@@ -1,3 +1,7 @@
+._input {
+    width: 100%;
+}
+
 ._input input {
     box-sizing: border-box;
     width: 100%;
@@ -7,7 +11,9 @@
     outline: none;
     border-radius: 8px;
 }
-._input input, ._input input::placeholder {
+
+._input input,
+._input input::placeholder {
     color: #707070;
     font-size: 16px;
     line-height: 18px;

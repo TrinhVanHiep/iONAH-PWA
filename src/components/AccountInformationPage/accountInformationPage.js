@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { useAccountInformationPage } from '@magento/peregrine/lib/talons/AccountInformationPage/useAccountInformationPage';
 import { useStyle } from '@magento/venia-ui/lib/classify';
@@ -7,9 +7,14 @@ import { Message } from '@magento/venia-ui/lib/components/Field';
 import defaultClasses from './accountInformationPage.module.css';
 import AccountInformationPageOperations from './accountInformationPage.gql.js';
 import avatar from "../../asset/img/AccountInformation/avatar.png";
+import Input from "../Input";
+import Dropdown from "../Dropdown/index";
+import { IconFacebookColor } from '../../asset/Icons/Icon';
+import googleIcon from "../../asset/img/AccountInformation/googleIcon.svg"
 
 const AccountInformationPage = props => {
   const classes = useStyle(defaultClasses, props.classes);
+  const [dayValue, setDayValue] = useState()
 
   const talonProps = useAccountInformationPage({
     ...AccountInformationPageOperations
@@ -57,58 +62,104 @@ const AccountInformationPage = props => {
       <div className={classes.userInformation}>
         <div className={classes.userAvatar}>
           <img src={avatar} />
-          <p className={classes.selectImage}>Anh dai dien</p>
-          <Button className={classes.btnSelectImage} type='secondary'>Them Anh</Button>
+          <p className={classes.selectImage}>Ảnh đại diện</p>
+          <Button className={classes.btnSelectImage} type='secondary'>Chọn ảnh</Button>
         </div>
 
         <div className={classes.accountDetails}>
-          <h3 className={classes.title}>Thông tin cá nhân</h3>
-          <div className={classes.lineItemsContainer}>
-            <span className={classes.nameLabel}>
-              <FormattedMessage
-                id={'global.name'}
-                defaultMessage={'Tên'}
-              />
-            </span>
-            <span className={classes.nameValue}>
-              {customerName}
-            </span>
-            <span className={classes.emailLabel}>
-              <FormattedMessage
-                id={'global.email'}
-                defaultMessage={'Giới tính'}
-              />
-            </span>
-            <span className={classes.emailValue}>
-              {customer.email}
-            </span>
-            <span className={classes.passwordLabel}>
-              <FormattedMessage
-                id={'global.password'}
-                defaultMessage={'Password'}
-              />
-            </span>
-            <span className={classes.passwordValue}>
-              {passwordValue}
-            </span>
+          <div className={classes.personalInfor}>
+            <h3 className={classes.title}>Thông tin cá nhân</h3>
+            <div className={classes.content}>
+              <div className={classes.contentLabel}>
+                <span className={classes.labelName}>Tên</span>
+              </div>
+              <div className={classes.contentValue}>
+                <Input className={classes.textInput} onChange={() => { }} placeholder='Enter your name' />
+              </div>
+            </div>
+
+            <div className={classes.content}>
+              <div className={classes.contentLabel}>
+                <span className={classes.labelName}>Giới tính</span>
+              </div>
+              <div className={classes.contentValue}>
+
+              </div>
+            </div>
+
+            <div className={classes.content}>
+              <div className={classes.contentLabel}>
+                <span className={classes.labelName}>Ngày sinh</span>
+              </div>
+              <div className={classes.contentValue}>
+                <Dropdown className={classes.dropdownSelect} label="Ngày" value={dayValue} height="32px" width="143px" backgourd="#F7F7F7" />
+                <Dropdown className={classes.dropdownSelect} label="Tháng" value={dayValue} height="32px" width="143px" backgourd="#F7F7F7" />
+                <Dropdown className={classes.dropdownSelect} label="Năm" value={dayValue} height="32px" width="143px" backgourd="#F7F7F7" />
+              </div>
+            </div>
           </div>
-          <div className={classes.editButtonContainer}>
-            <Button
-              className={classes.editInformationButton}
-              disabled={false}
-              priority="normal"
-              data-cy="AccountInformationPage-editInformationButton"
-            >
-              <FormattedMessage
-                id={'global.editButton'}
-                defaultMessage={'Edit'}
-              />
-            </Button>
+
+          <div className={classes.personalInfor}>
+            <h3 className={classes.title}>Số điện thoại và email</h3>
+            <div className={classes.content}>
+              <div className={classes.contentLabel}>
+                <span className={classes.labelName}>Số điện thoại</span>
+              </div>
+              {/* <div className={classes.contentValue}>
+                <p className={classes.userPhoneNumber}>(+84) 000 000 0000</p>
+              </div> */}
+              <div className={classes.contentValueEdit}>
+                <div className={classes.valueEdit}>(+84) 000 000 0000</div>
+                <p className={classes.editButton}>Thay đổi</p>
+              </div>
+            </div>
+
+            <div className={classes.content}>
+              <div className={classes.contentLabel}>
+                <span className={classes.labelName}>Email</span>
+              </div>
+              <div className={classes.contentValueEdit}>
+                <div className={classes.valueEdit}>(+84) 000 000 0000</div>
+                <p className={classes.editButton}>Thay đổi</p>
+              </div>
+            </div>
+          </div>
+
+          <div className={classes.personalInfor}>
+            <h3 className={classes.title}>Liên kết tài khoản mạng xã hội</h3>
+            <div className={classes.contentSocial}>
+              <div className={classes.contentLabel}>
+                <span className={classes.labelName}>
+                  <i className={classes.socialIcon}><IconFacebookColor /></i> Facebook
+                </span>
+              </div>
+              <div className={classes.contentValueSocial}>
+                <Button className={classes.buttonLink}>Liên kết</Button>
+              </div>
+            </div>
+
+            <div className={classes.content}>
+              <div className={classes.contentLabel}>
+                <span className={classes.labelName}>
+                  <i className={classes.socialIcon}>
+                    <img src={googleIcon} alt="google-icon" /></i> Google
+                </span>
+              </div>
+              <div className={classes.contentValueSocial}>
+                <div className={classes.userPhoneNumber}>
+                  <button className={classes.buttonLink}>Đã liên kết</button>
+                  <p className={classes.cancelLink}>Hủy liên kết</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className={classes.buttonSubmit}>
+            <Button type='primary' className={classes.buttonSave}>Lưu thay đổi</Button>
           </div>
         </div>
       </div>
-
-    </Fragment>
+    </Fragment >
   );
 
   return (
