@@ -132,7 +132,8 @@
 }
 
 .btn_custom {
-    border: 2px solid #1E24C0;
+    box-sizing: border-box;
+    border: 3px solid #1E24C0;
     background-color: #1E24C0;
     color: #FFFFFF;
 }

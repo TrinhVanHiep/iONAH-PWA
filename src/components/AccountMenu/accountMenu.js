@@ -33,7 +33,6 @@ const AccountMenu = React.forwardRef((props, ref) => {
         : classes.contents;
 
     let dropdownContents = null;
-
     switch (view) {
         case 'ACCOUNT': {
             dropdownContents = <AccountMenuItems onSignOut={handleSignOut} />;

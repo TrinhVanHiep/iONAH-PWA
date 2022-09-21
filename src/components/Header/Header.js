@@ -64,8 +64,9 @@ const Header = (props) => {
                                     </div>
                                     <div className={classes.welcom}>
                                         <p className={classes.textWelcom}>Welcome</p>
+                                        {/* <p className={classes.signinRegister} > <span>Sign in</span> / <span>Register</span></p> */}
                                         <AccountTrigger />  
-                                        <p className={classes.signinRegister} > <span onClick={() => props.openModal("signIn")} >Sign in</span> / <span onClick={() => props.openModal("signUp")} >Register</span></p>
+
                                     </div>
                                 </div>
                                 <div className={classes.language}>
