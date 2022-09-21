@@ -24,7 +24,7 @@ const ProductItemSelect = ({
           <p className={classes.itemName}>{itemName}</p>
           <span className={classes.itemPrice}>{formatMoney(itemPrice)} vnd</span>
         </div>
-        <Button type="secondary">Thêm vào so sánh</Button>
+        <Button btnType="secondary">Thêm vào so sánh</Button>
       </div>
     </div>
   );
