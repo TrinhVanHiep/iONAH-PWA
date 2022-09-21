@@ -2,7 +2,7 @@ import React, { useMemo, Fragment, Suspense } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { arrayOf, bool, number, shape, string } from 'prop-types';
 import { Form } from 'informed';
-import { Info } from 'react-feather';
+import { Info, Heart as WishlistIcon, PlusCircle as CompareIcon  } from 'react-feather';
 
 import Price from '@magento/venia-ui/lib/components/Price';
 import { useProductFullDetail } from '@magento/peregrine/lib/talons/ProductFullDetail/useProductFullDetail';
@@ -219,6 +219,14 @@ const ProductFullDetail = props => {
         </section>
     ) : null;
 
+    //Value attributes are allowed show bottom SKU
+    const shouldShowAttributes = ['Inverter','1 chiều','R32','< 15m2','2 Năm bảo hành'];
+    const attributeAllowToShow = shouldShowAttributes?.map(attr => {
+        return (
+            <div className={classes.attributeItem}>{attr}</div>
+        );
+    });
+
     return (
         <Fragment>
             <div className={classes.breads}>
@@ -256,6 +264,8 @@ const ProductFullDetail = props => {
                             </span>
                             {/* {shortDescription} */}
                         </section>
+                        <div className={classes.filterAttribute}>{attributeAllowToShow}</div>
+
                         <FormError
                             classes={{
                                 root: classes.formErrors
@@ -276,8 +286,8 @@ const ProductFullDetail = props => {
                         </p>
 
                         <section className={classes.addTo}>
-                            <div className={classes.addCompare}>CompareI</div>
-                            <div className={classes.addWishlist}>WishlistI</div>
+                            <div className={classes.addCompare}><CompareIcon width={30} height={30} /></div>
+                            <div className={classes.addWishlist}><WishlistIcon width={30} height={30} /></div>
                         </section>
                         <section className={classes.review}>
                             <span>Review(45)</span>
