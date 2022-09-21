@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import PopupChangeAddress from "../PopupChangeAddress/index"
+import PopupChooseDeliveryTime from "../PopupChooseDeliveryTime/index"
 import ProductItemSelect from "../ProductItemSelect/ProductItemSelect"
 import ProductItemsRecentlyView from "../ProductItemsRecentlyView/ProductItemsRecentlyView"
 import ProductItemsSuggest from "../ProductItemsSuggest/ProductItemsSuggest";
@@ -21,9 +21,7 @@ const HomePage = () => {
     <div>
       <h1 style={hi}>Hello, {who}!</h1>
       <h1 style={wave}>{"\uD83D\uDC4B"}</h1>
-      <PopupChangeAddress />
-      <PopupChangeAddress/>
-      <Footer/>
+      <PopupChooseDeliveryTime/>
     </div>
   );
 };
