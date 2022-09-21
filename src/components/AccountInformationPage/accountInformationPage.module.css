@@ -2,8 +2,10 @@
   composes: grid from global;
   composes: px-lg from global;
   composes: py-md from global;
-  padding: 32px 24px;
+  padding: 32px 154px 32px 24px;
   box-sizing: border-box;
+  background-color: #FFFFFF;
+  border-radius: 8px;
 }
 
 .title {
@@ -19,58 +21,196 @@
   margin-bottom: 40px;
 }
 
-.content {
-  display: flex;
-  justify-content: space-between;
-}
-
-.accountDetails {
-  composes: gap-y-md from global;
-  composes: grid from global;
-  composes: grid-cols-1 from global;
-
-  composes: lg_grid-cols-3 from global;
-}
-
-.lineItemsContainer {
-  composes: gap-3 from global;
-  composes: grid from global;
-  composes: grid-cols-1 from global;
-  composes: leading-normal from global;
-  grid-column: 1 / span 1;
-
-  composes: lg_gap-xs from global;
-  composes: lg_grid-cols-2 from global;
-}
-
-.lineItemLabel {
-  composes: font-bold from global;
-}
-
-.nameLabel,
-.emailLabel,
-.passwordLabel {
-  composes: font-bold from global;
-}
-
-.nameValue,
-.emailValue,
-.passwordValue {}
-
-.editButtonContainer {
-  grid-column: 1 / span 1;
-  composes: text-center from global;
-}
-
 .userInformation {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
+.accountDetails .personalInfor {
+  margin-bottom: 28px;
+}
+
+.accountDetails .personalInfor .title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: capitalize;
+  color: #282828;
+}
+
+.accountDetails .personalInfor .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.accountDetails .personalInfor .contentSocial {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #F6F6F6;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.accountDetails .personalInfor .content .contentLabel {
+  width: 20%;
+}
+
+.accountDetails .personalInfor .content .contentValue {
+  width: 75%;
+}
+
+.contentValueEdit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  width: 463px;
+  height: 34px;
+  background: #F7F7F7;
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #707070;
+}
+
+.editButton {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-decoration-line: underline;
+  color: #1E24C0;
+  cursor: pointer;
+}
+
+.accountDetails .personalInfor .content .contentLabel .labelName {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #707070;
+  display: flex;
+  align-items: center;
+}
+
+.accountDetails .personalInfor .contentSocial .contentLabel .labelName {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #707070;
+  display: flex;
+  align-items: center;
+}
+
+
+.socialIcon {
+  margin-right: 16px;
+}
+
+.contentValueSocial {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.accountDetails .personalInfor .content .contentValue {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accountDetails .personalInfor .content .contentValue .wrapper__dropdown {
+  margin-right: 16px;
+}
+
+.accountDetails .personalInfor .content .contentValue ._input {
+  width: 100%;
+}
+
+.accountDetails .personalInfor .content .contentValue .textInput {
+  padding: 8px 16px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #707070;
+  width: 100%;
+}
+
+.userPhoneNumber {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #707070;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.userPhoneNumber .buttonLink {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 8px;
+  width: 100px;
+  height: 26px;
+  background: #F6F6F6;
+  border-radius: 4px;
+  color: #1E24C0;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+
+.userPhoneNumber .cancelLink {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  text-decoration-line: underline;
+  color: #818181;
+  cursor: pointer;
+}
+
 .userAvatar {
-  width: 23.04%;
+  width: 30.04%;
   text-align: center;
+  border-right: 1px solid #C4C4C4;
+  padding-right: 69px;
+  box-sizing: border-box;
+  max-height: 375px;
 }
 
 .userAvatar .selectImage {
@@ -107,7 +247,7 @@
 }
 
 .accountDetails {
-  width: 70%;
+  width: 65%;
 }
 
 .accountDetails .title {
@@ -119,6 +259,53 @@
   text-transform: capitalize;
   color: #282828;
   margin-bottom: 16px;
+}
+
+.accountDetails .lineItemsContainer .labelName {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #707070;
+}
+
+.accountDetails .buttonSubmit {
+  width: 100%;
+  text-align: right;
+}
+
+.buttonSave {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  max-width: 240px;
+  width: 100%;
+}
+
+.buttonLink {
+  padding: 4px 8px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
 }
 
 
