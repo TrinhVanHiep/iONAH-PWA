@@ -1,0 +1,50 @@
+.root {
+    composes: hidden from global;
+    composes: items-center from global;
+    composes: h-lg from global;
+
+    composes: sm_grid from global;
+}
+
+.root_open {
+    composes: root;
+
+    composes: shadow-headerTrigger from global;
+    position: absolute;
+    z-index: 1000;
+}
+
+.trigger {
+    composes: root from '@magento/venia-ui/lib/components/clickable.module.css';
+
+    composes: h-[3rem] from global;
+    composes: min-w-[6rem] from global;
+    composes: z-foreground from global;
+    
+    
+}
+.root {
+    position: absolute;
+    height: fit-content;
+    min-height: unset;
+    border-color: none;
+}
+.trigger {
+    height: fit-content;
+    min-height: unset;
+    border-color: none;
+}
+.signinRegister {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #fff;
+    margin: 0;
+    background: transparent;
+    min-width: 0;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}

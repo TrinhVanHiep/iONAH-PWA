@@ -6,4 +6,5 @@ module.exports = componentOverride = {
     [`@magento/venia-ui/lib/components/Main`]: 'src/components/Main',
     [`@magento/venia-ui/lib/components/Footer`]: 'src/components/Footer',
     [`@magento/venia-ui/lib/components/AccountInformationPage`]: 'src/components/AccountInformationPage',
+    [`@magento/venia-ui/lib/components/Header/accountTrigger.js`]: 'src/components/Header/accountTrigger.js',
 };

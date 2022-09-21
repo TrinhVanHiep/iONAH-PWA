@@ -28,7 +28,7 @@ const Button = props => {
         disabled,
         onPress,
         type,
-        btnType,//primary; secondary; tertiary
+        btnType="primary",//primary; secondary; tertiary
         ...restProps
     } = props;
 
