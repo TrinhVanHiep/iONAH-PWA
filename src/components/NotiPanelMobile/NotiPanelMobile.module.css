@@ -1,0 +1,98 @@
+.generalNotificationContainer {
+    /* display: flex; */
+    width: 100%;
+    padding: 0 32px;
+    /* height: 100px; */
+    /* background: red; */
+}
+.generalNotificationContent {
+    /* display: flex; */
+    background: white;
+    min-height: 100px;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-top: 12px;
+}
+.btnGroupOutLine {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    font-size: 16px;
+    line-height: 18.75px;
+    padding: 0 10px;
+}
+.btnGroupInLine {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 14.6px;
+    justify-content: space-between;
+}
+.readedBtn {
+    color: blue;
+}
+.deleteBtn {
+    color: red;
+    /* margin-left: 12px; */
+}
+.generalNotificationContent .notiContent .contentWrapper {
+    width: 100%;
+    display: flex;
+    /* background: white; */
+    padding: 8px 4px;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+.contentDate {
+    align-items: center;
+    display: flex;
+    color: #707070;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Roboto';
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+}
+.contentWrapper .test {
+    align-items: baseline;
+    /* color: red; */
+}
+.generalNotificationContent .notiContent .contentWrapper:hover {
+    background: #f9f9f9;
+}
+.contentTextWrapper {
+    max-width: 66.28%;
+    padding-right: 8px;
+}
+.contentImage {
+    width: 26.546%;
+}
+.contentTextTitle {
+    font-weight: 600;
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+}
+.contentTextContent {
+    font-weight: 400;
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #707070;
+    margin-bottom: 8px;
+}
+.contentTextImage {
+    /* margin-top: 12px; */
+    margin-bottom: 8px;
+}
+img {
+    object-fit: cover;
+    width: 100%;
+}

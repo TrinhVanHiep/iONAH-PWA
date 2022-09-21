@@ -1,0 +1,71 @@
+.layoutNoTifMenu {
+    box-sizing: border-box;
+    align-items: flex-start;
+    padding: 18.5px 40px;
+    background: #fff;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.layoutNoTifMenu .menuItems .subMenu {
+    display: flex;
+}
+
+.layoutNoTifMenu .menuItems .subMenuItem {
+    margin-right: 40px;
+    /* margin-bottom: 4px; */
+    cursor: pointer;
+}
+
+.layoutNoTifMenu .menuItems .subMenuItem a {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23.44px;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.layoutNoTifMenu .menuItems .subMenu .active {
+    /* margin-bottom: 4px; */
+}
+
+.layoutNoTifMenu .menuItems .subMenu .active a {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #1e24c0;
+}
+@media (max-width: 768px) {
+    .layoutNoTifMenu {
+        box-sizing: border-box;
+        align-items: baseline;
+        display: flex;
+        align-items: center;
+    }
+    .layoutNoTifMenu .menuItems .subMenu {
+        /* display: flex; */
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .layoutNoTifMenu .menuItems .subMenuItem {
+        margin-right: 0;
+        width: 50%;
+    }
+    .layoutNoTifMenu .menuItems .subMenuItem a {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14.6px;
+        letter-spacing: 0.04em;
+        color: #000000;
+    }
+}
