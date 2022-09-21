@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./PopupChangeShippingAddress.css";
-import Edit from "../../image/icons_edit.svg";
+import Edit from "../../asset/img/icons_edit.svg";
 import Button from "../Button/button";
-import Close from "../../image/close.svg";
+import Close from "../../asset/img/close.svg";
 import AddressItem from "../AddressItem";
 const data = [
   {
